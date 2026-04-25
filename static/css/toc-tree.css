@@ -140,6 +140,14 @@ html.dark .niklas-toc {
   transition: background 0.15s ease, transform 0.12s ease, color 0.15s ease;
 }
 
+.niklas-toc-links a .niklas-toc-icon {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
 .niklas-toc-links a:hover {
   background: var(--toc-hover-bg);
   color: var(--toc-link-hover) !important;

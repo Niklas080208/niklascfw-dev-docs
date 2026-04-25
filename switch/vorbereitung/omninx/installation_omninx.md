@@ -36,8 +36,6 @@ Daraus wählt er:
 >>> Anzeige prüfen und bestätigen
 Der Installer zeigt **Modus** (Update/Saubere Installation), **Pack-Variante** (Standard/Light/OC) und **Aktuelle Installation**. Mit **A (rechter Joy-Con)** oder **Power-Taste** bestätigen, um die Installation zu starten.
 
-
-
 ![OmniNX-Installer-Payload](/images/switch/omninx/installation/payload-home.jpeg)
 !!!info Switch Lite
 Bei der **Switch Lite** funktioniert nur die **Power-Taste** zur Bestätigung.

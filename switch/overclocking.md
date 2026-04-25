@@ -1,7 +1,7 @@
 ---
 icon: cpu
 label: "Overclocking (OC)"
-order: 11
+order: 9
 author:
   name: Ch3ck3rM0n
   avatar: /assets/ch3ck3rm0n-pfp.png
@@ -116,7 +116,6 @@ Nun können die ersten Werte gesetzt werden (orientiere dich an den Einstellunge
 |||
 :::
 
-
 !!!warning Timings
 Die **Timings** müssen zum verbauten **RAM-Modul** passen. Dafür im Menü das passende **Preset/Template** der Entwickler laden – alle verfügbaren RAM-Module sind dort vordefiniert.
 !!!
@@ -144,7 +143,6 @@ Startet die Konsole nicht mehr in die CFW: **loader.kip** unter `sd:/atmosphere/
 <a href="/images/switch/omninx/overclocking/033_sysclk_temporary.jpg" target="_blank" rel="noopener">![sys-clk – Temporary Overrides](/images/switch/omninx/overclocking/033_sysclk_temporary.jpg)</a>
 |||
 :::
-
 
 4. Im **Status Monitor** prüfen, ob Taktraten und **Stromverbrauch (W)** stimmen – im Handheld **max. 8,6 W** (V2/OLED) bzw. **6,5 W** (V1/Lite) für den Akku einhalten.
 
@@ -197,7 +195,6 @@ Die Einstellung ist **nicht** wie beim sys-clk-Overlay global – für **jedes S
 **Zuerst das Spiel starten**, danach das Overlay einstellen. Sonst sind keine Einstellungen möglich.
 !!!
 
-
 ---
 
 ## Bildwiederholrate / Frames per Second (FPS)
@@ -228,7 +225,6 @@ Um **über 30 FPS** das richtige Spielgefühl zu bekommen, bietet der FPSLocker 
 Einfach den **Konverter ausführen**, Spiel **neustarten** und anschließend kannst du die Bildrate schrittweise bis z. B. **60 FPS** erhöhen. Die englischen Beschreibungen im Menü erklären die Schritte im Detail.
 
 Denk aber bitte daran, dass du für höhere Frameraten auch entsprechend mehr Leistung brauchst und die Nintendo Switch gerne an ihre Grenzen gerät. Das bedeutet, während ein "The Legend of Zelda: Tears of the Kingdom" problemlos bei dir mit 60 FPS läuft, kann ein "Batman: Arkham Knight" weiterhin mit 35 FPS vor sich hindümpeln. Manche Spiele sind einfach zu hardwarehungrig und das gilt vor allem für Third-Party-Games.
-
 
 ---
 

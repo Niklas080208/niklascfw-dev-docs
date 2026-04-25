@@ -71,5 +71,5 @@ Ohne Verbindung zu den Nintendo-Servern muss man die **Systemzeit** manuell sync
 ## Fertig
 
 !!!success Fertig
-Das Pack ist eingerichtet. Als Nächstes: **Updates** prüfen – siehe [Updates](./updates/omninx-update).
+Das Pack ist eingerichtet. Als Nächstes: **Updates** prüfen – siehe [Updates](../../updates/omninx-update).
 !!!

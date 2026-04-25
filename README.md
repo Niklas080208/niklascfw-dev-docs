@@ -4,7 +4,7 @@ visibility: hidden
 
 # Willkommen bei den NiklasCFW Docs
 
-Diese Dokumentation führt dich durch **Vorbereitung**, **Backups**, **Nachbereitung**, **Vertiefung** und **CFW-Pakete** rund um die Nintendo Switch. Das **Inhaltsverzeichnis** folgt der **Reihenfolge der Seitenleiste** (unter „Nintendo Switch“); darunter Kurzinfos, Hinweise und empfohlene Abläufe.
+Diese Dokumentation führt dich mit einem **roten Faden** von der **Vorbereitung & Installation** über **Backups** bis zu **Nachbereitung** und **Vertiefung** rund um die Nintendo Switch. Einstieg für alle Schritte: **[Start: Roter Faden](/switch/vorbereitung/roter_faden)**. **OmniNX ist der primäre Installationspfad**, der NiklasCFW Pack wird als Legacy-Fallback geführt. Das **Inhaltsverzeichnis** folgt der **Reihenfolge der Seitenleiste** (unter „Nintendo Switch“); darunter Kurzinfos, Hinweise und empfohlene Abläufe.
 
 <nav class="niklas-toc" aria-label="Inhaltsverzeichnis">
 <div class="niklas-toc-panel">
@@ -14,14 +14,25 @@ Diese Dokumentation führt dich durch **Vorbereitung**, **Backups**, **Nachberei
 <ul class="niklas-toc-branches">
 
 <li>
-  <div class="niklas-toc-branch-head">Vorbereitung</div>
+  <div class="niklas-toc-branch-head">Vorbereitung &amp; Installation</div>
   <ul class="niklas-toc-links">
+    <li><a href="/switch/vorbereitung/roter_faden">Start: Roter Faden</a></li>
     <li><a href="/switch/vorbereitung/switch_ungepatcht_check">Switch Modell prüfen</a></li>
     <li><a href="/switch/vorbereitung/richtige_sd">Richtige SD-Karte</a></li>
     <li><a href="/switch/vorbereitung/sd_format">SD auf FAT32 formatieren</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows">RCM Softmod – Windows</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_mac">RCM Softmod – macOS</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_linux">RCM Softmod – Linux, Android, ChromeOS</a></li>
+    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows"><img class="niklas-toc-icon" src="/assets/win11.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – Windows</a></li>
+    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_mac"><img class="niklas-toc-icon" src="/assets/apple.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – macOS</a></li>
+    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_linux"><img class="niklas-toc-icon" src="/assets/linux.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – Linux, Android, ChromeOS</a></li>
+    <li><a href="/switch/system-backup/nand_backup">NAND Backup erstellen</a></li>
+    <li><a href="/switch/vorbereitung/omninx/einfuehrung">OmniNX Einführung</a></li>
+    <li><a href="/switch/vorbereitung/omninx/voraussetzungen">OmniNX Voraussetzungen</a></li>
+    <li><a href="/switch/vorbereitung/omninx/download">OmniNX Download</a></li>
+    <li><a href="/switch/vorbereitung/omninx/installation_omninx">OmniNX Installation</a></li>
+    <li><a href="/switch/vorbereitung/omninx/emummc_erstellen">OmniNX emuMMC erstellen</a></li>
+    <li><a href="/switch/vorbereitung/omninx/pack_einrichten">OmniNX Pack einrichten</a></li>
+    <li><a href="/switch/vorbereitung/omninx/updates/omninx-update">OmniNX Pack Update</a></li>
+    <li><a href="/switch/vorbereitung/omninx/updates/firmware-update">Switch Firmware Update</a></li>
+    <li><a href="/switch/vorbereitung/omninx/overclocking">Overclocking (optional)</a></li>
   </ul>
 </li>
 
@@ -146,7 +157,7 @@ Diese Dokumentation führt dich durch **Vorbereitung**, **Backups**, **Nachberei
 </li>
 
 <li>
-  <div class="niklas-toc-branch-head">NiklasCFW Pack</div>
+  <div class="niklas-toc-branch-head">NiklasCFW Pack (Deprecated/Fallback)</div>
   <ul class="niklas-toc-links">
     <li><a href="/switch/niklascfw-pack/guide1.4.0">Ersteinrichtung 1.5.0</a></li>
     <li><a href="/switch/niklascfw-pack/guide1">Ersteinrichtung Alt</a></li>
@@ -154,21 +165,6 @@ Diese Dokumentation führt dich durch **Vorbereitung**, **Backups**, **Nachberei
     <li><a href="/switch/niklascfw-pack/guide3">Pack einrichten</a></li>
     <li><a href="/switch/niklascfw-pack/guide4">CFW Pack Update</a></li>
     <li><a href="/switch/niklascfw-pack/guide5">emuMMC Firmware Update</a></li>
-  </ul>
-</li>
-
-<li>
-  <div class="niklas-toc-branch-head">OmniNX</div>
-  <ul class="niklas-toc-links">
-    <li><a href="/switch/omninx/einfuehrung">Einführung</a></li>
-    <li><a href="/switch/omninx/voraussetzungen">Voraussetzungen</a></li>
-    <li><a href="/switch/omninx/download">Download</a></li>
-    <li><a href="/switch/omninx/installation_omninx">Installation</a></li>
-    <li><a href="/switch/omninx/emummc_erstellen">emuMMC erstellen</a></li>
-    <li><a href="/switch/omninx/pack_einrichten">Pack einrichten</a></li>
-    <li><a href="/switch/omninx/overclocking">Overclocking (OC)</a></li>
-    <li><a href="/switch/omninx/updates/omninx-update">OmniNX Update</a></li>
-    <li><a href="/switch/omninx/updates/firmware-update">Firmware Update</a></li>
   </ul>
 </li>
 
@@ -221,7 +217,7 @@ graph TD
     RCM --> SD
     SD --> CFW[🚀 CFW installieren]
     CFW --> Backup[💾 NAND Backup]
-    Backup --> Pack[🎯 NiklasCFW Pack]
+    Backup --> Pack[🎯 OmniNX (primär)]
     Pack --> Done([🎉 Fertig!])
     
     style Start fill:#e1f5fe
@@ -240,7 +236,7 @@ graph TD
 | 🔍 **Serialchecker** | Prüfe deine Switch | [serialcheck.niklascfw.de](https://serialcheck.niklascfw.de) |
 | 📺 **YouTube** | Video-Tutorials | [@NiklasCFW](https://youtube.com/@NiklasCFW) |
 | 💬 **Discord** | Community Support | [discord.gg/niklascfw](https://discord.gg/niklascfw) |
-| 📱 **GitHub** | Source Code | [NiklasCFW Pack GitHub Repo](https://github.com/Woody-NX/NiklasCFW_Pack) |
+| 📱 **Releases** | OmniNX Downloads | [OmniNX Releases](https://git.niklascfw.de/OmniNX/OmniNX/releases) |
 
 ---
 
@@ -250,7 +246,7 @@ graph TD
 <h4 style="margin-top: 0; color: #28a745;">💡 Aktuelle Updates</h4>
 <ul style="margin-bottom: 0;">
 <li>✨ <strong>Komplett überarbeitete Struktur</strong> mit besserer Navigation</li>
-<li>🎯 <strong>NiklasCFW Pack</strong> - Alles-in-einem Paket</li>
+<li>🎯 <strong>OmniNX</strong> als primärer Installationspfad mit linearem Ablauf</li>
 <li>📱 <strong>Mobile-optimierte</strong> Darstellung</li>
 <li>🔄 <strong>Regelmäßige Updates</strong> für neue Firmware-Versionen</li>
 </ul>

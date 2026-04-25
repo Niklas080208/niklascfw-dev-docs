@@ -75,7 +75,7 @@ Klicke zum Aufklappen.
 
 ## Schnellstart – empfohlener Ablauf
 
->>> [Voraussetzungen](voraussetzungen)
+>>> [Voraussetzungen](../voraussetzungen/voraussetzungen.md)
 Modell prüfen, SD (FAT32), Hekate startbar, prod.keys.
 
 >>> [Download](download)
@@ -90,10 +90,10 @@ SD-File oder SD-Partition in Hekate anlegen.
 >>> [Pack einrichten](pack_einrichten)
 Forwarder, Systemzeit (NTP), optionale Apps.
 
->>> [Overclocking (OC)](overclocking) *(optional, nur OC-Pack)*
+>>> [Overclocking (OC)](../../overclocking) *(optional, nur OC-Pack)*
 Übertakten/Undervolting mit RAM Patcher, OC Switchcraft EOS, sys-clk – nur für Fortgeschrittene.
 
->>> [Updates](./updates/omninx-update)
+>>> [Updates](../../updates/omninx-update)
 Pack und Firmware (Daybreak) aktualisieren.
 >>>
 
@@ -103,13 +103,13 @@ Pack und Firmware (Daybreak) aktualisieren.
 
 | Schritt | Inhalt |
 |--------|--------|
-| **[Voraussetzungen](voraussetzungen)** | FAT32-SD, prod.keys, was du brauchst |
+| **[Voraussetzungen](../voraussetzungen/voraussetzungen.md)** | FAT32-SD, prod.keys, was du brauchst |
 | **[Download](download)** | Pack herunterladen, entpacken, auf SD kopieren |
 | **[Installation – OmniNX](installation_omninx)** | Installer-Payload starten (Update vs. saubere Installation) |
 | **[emuMMC erstellen](emummc_erstellen)** | SD-File oder SD-Partition |
 | **[Pack einrichten](pack_einrichten)** | Forwarder, Systemzeit, optionale Apps |
-| **[Overclocking (OC)](overclocking)** | Übertakten/Undervolting (nur OC-Pack, fortgeschritten) |
-| **[Updates](./updates/omninx-update)** | OmniNX-Pack und Firmware aktualisieren |
+| **[Overclocking (OC)](../../overclocking)** | Übertakten/Undervolting (nur OC-Pack, fortgeschritten) |
+| **[Updates](../../updates/omninx-update)** | OmniNX-Pack und Firmware aktualisieren |
 
 ---
 

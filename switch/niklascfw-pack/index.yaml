@@ -1,5 +1,5 @@
 icon: "/assets/grosseN.png"
 label: "NiklasCFW Pack"
 expanded: false
-order: 100
+order: -200
 link: false

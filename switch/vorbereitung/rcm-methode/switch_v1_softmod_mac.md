@@ -56,3 +56,8 @@ Es gibt mehrere Möglichkeiten die Payload über macOS an eure Nintendo Switch z
 ---
 
 **Getestet auf:** macOS
+
+!!!info Weiter mit Installation
+Wenn RCM und Payload bei dir klappen, geht es mit dem **roten Faden** weiter: [Start: Roter Faden](../roter_faden).  
+**OmniNX (primärer Pfad):** [Einführung](../omninx/einfuehrung) · **NiklasCFW Pack (Deprecated Fallback):** [Ersteinrichtung 1.5.0](../../niklascfw-pack/guide1.4.0).
+!!!

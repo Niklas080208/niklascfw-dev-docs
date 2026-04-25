@@ -1,5 +1,7 @@
-# Cursor
-.cursor/
+# Cursor – ignore local IDE state; keep shared plans in repo
+.cursor/**
+!.cursor/plans/
+!.cursor/plans/**
 
 # macOS
 .DS_Store

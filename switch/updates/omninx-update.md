@@ -16,7 +16,7 @@ Hier geht es um das **Aktualisieren** des **OmniNX-Packs** (z. B. Standard/Lig
 ## Voraussetzungen
 
 !!!warning Uhrzeit
-Die **Uhrzeit** sollte synchronisiert sein (z. B. für Downloads). Anleitung: [Einrichtung](/switch/omninx/pack_einrichten/#systemzeit-synchronisieren).
+Die **Uhrzeit** sollte synchronisiert sein (z. B. für Downloads). Anleitung: [Einrichtung](/switch/vorbereitung/omninx/pack_einrichten/#systemzeit-synchronisieren).
 !!!
 
 ---
@@ -36,7 +36,6 @@ Die **Uhrzeit** sollte synchronisiert sein (z. B. für Downloads). Anleitung: 
 
 ![OmniNX Downloader – OmniNX Updater](/images/switch/omninx/updates/pack/omninx-downloader.jpg)
 ![OmniNX Downloader – OmniNX Download](/images/switch/omninx/updates/pack/omninx-downloading.jpg)
-
 
 !!!info Download und Upload
 Ein Vorgang läuft **zweimal** ab: Zuerst wird die Datei (z. B. .zip) **heruntergeladen**, danach auf die SD-Karte **hochgeladen**. Beide Phasen müssen durchlaufen werden.

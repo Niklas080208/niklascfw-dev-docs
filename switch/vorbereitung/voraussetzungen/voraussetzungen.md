@@ -1,7 +1,7 @@
 ---
 icon: checklist
 label: "Voraussetzungen"
-order: 70
+order: 700
 author:
   name: NiklasCFW
   avatar: /assets/niklas-pfp.png
@@ -12,7 +12,7 @@ author:
 Bevor du mit dem OmniNX Setup startest, solltest du folgende Punkte erfüllen.
 
 !!!tip Kurz-Check
-Alle Punkte auf dieser Seite solltest du erfüllen, bevor du mit [Download](download) weitermachst.
+Alle Punkte auf dieser Seite solltest du erfüllen, bevor du mit [Download](../omninx/download) weitermachst.
 !!!
 
 ---
@@ -42,7 +42,7 @@ Unsichere Auskunft. **RCM testen**, ob der Payload-Start funktioniert.
 CFW ohne Modchip **nicht möglich**. Nur mit verbautem Modchip modbar.
 !!!
 
-Weitere Infos: [Seriennummern und Switch-Revisionen](/switch/vorbereitung/switch_ungepatcht_check)
+Weitere Infos: [Seriennummern und Switch-Revisionen](switch_ungepatcht_check)
 
 ---
 
@@ -57,7 +57,7 @@ Für CFW und emuMMC **niemals exFAT** verwenden – nur **FAT32**.
 
 https://www.youtube.com/watch?v=WW53mOqHqIY
 
-Warum FAT32 und welche Karte: [Richtige SD-Karte](/switch/vorbereitung/richtige_sd) · [SD formatieren](/switch/vorbereitung/sd_format)
+Warum FAT32 und welche Karte: [Richtige SD-Karte](richtige_sd) · [SD formatieren](../sd_format)
 
 ---
 
@@ -68,7 +68,7 @@ Du musst **Hekate** starten können, z. B. durch:
 - **RCM + Payload-Injection** (z. B. TegraRcmGUI) bei ungepatchter V1, oder  
 - **Modchip** bei V1/V2/OLED/Lite.
 
-Falls du noch gar keine CFW hast: [Vorbereitung](/switch/vorbereitung/switch_ungepatcht_check).
+Falls du noch gar keine CFW hast: [Vorbereitung](switch_ungepatcht_check).
 
 ---
 
@@ -93,5 +93,5 @@ Die **prod.keys** werden mithilfe von dem SysNAND gedumpt. Sie sind z. B. für
 | prod.keys später dumperbar (Lockpick RCM) | :icon-checkbox: |
 
 !!!success Alles erfüllt?
-Weiter mit dem **[Download von OmniNX](download)**.
+Weiter mit dem **[Download von OmniNX](../omninx/download)**.
 !!!

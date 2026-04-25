@@ -57,3 +57,9 @@ order: 300
 - **FAT32 ist Pflicht** – exFAT kann zu Datenverlust führen.
 - Softmod ist **nicht dauerhaft** – nach jedem vollständigen Ausschalten muss der Payload erneut gesendet werden.
 - Nutze aktuelle Versionen von **Hekate** und **Atmosphère** passend zu deiner Firmware.
+
+!!!info Weiter mit Installation
+Wenn RCM und Payload bei dir klappen, geht es mit dem **roten Faden** weiter: Übersicht unter [Start: Roter Faden](../roter_faden).  
+Direkt mit **OmniNX (primärer Pfad)** starten: [OmniNX Einführung](../omninx/einfuehrung).  
+**Fallback (Deprecated):** [NiklasCFW Pack Ersteinrichtung 1.5.0](../../niklascfw-pack/guide1.4.0).
+!!!
