@@ -4,7 +4,7 @@ output: .retype
 exclude:
   - "RETYPE_AGENT_REFERENCE.md"
 
-url: docs.niklascfw.de # Use your website address here
+url: dev-docs.niklascfw.de # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
