@@ -16,7 +16,7 @@ Hier geht es um das **Aktualisieren** der **Switch-Firmware** (Horizon OS) in de
 ## Voraussetzungen
 
 !!!warning Uhrzeit
-Die **Uhrzeit** sollte synchronisiert sein (z. B. für Downloads). Anleitung: [Einrichtung](/switch/vorbereitung/omninx/pack_einrichten/#systemzeit-synchronisieren).
+Die **Uhrzeit** sollte synchronisiert sein (z. B. für Downloads). Anleitung: [Einrichtung](/switch/vorbereitung/pack_einrichten/#systemzeit-synchronisieren).
 !!!
 
 ---
