@@ -11,9 +11,9 @@ Der **NiklasCFW Pack** bleibt als **Legacy/Deprecated-Fallback** erhalten und is
 
 ## Phase 1: Konsole & SD klären
 
-[!ref](voraussetzungen/switch_ungepatcht_check)
+[!ref](voraussetzungen/serial_check/serial_check.md)
 [!ref](voraussetzungen/richtige_sd)
-[!ref](sd_format)
+[!ref](sd_wipe)
 
 ---
 
@@ -43,30 +43,30 @@ Bevor du System- oder emuMMC-Daten veränderst: **SysNAND sichern**.
 
 ### 4.1 Überblick und Varianten
 
-[!ref](omninx/einfuehrung)
+[!ref](einfuehrung)
 
 ### 4.2 Voraussetzungen-Check (optional)
 
 Wenn du Phase 1 und 2 komplett erledigt hast, kannst du den OmniNX-Check meist direkt überspringen.  
 Die Seite ist trotzdem praktisch als kompakte Gegenprüfung:
 
-[!ref](voraussetzungen/voraussetzungen.md)
+[!ref](voraussetzungen/serial_check/serial_check.md)
 
 ### 4.3 Download und Dateien auf SD kopieren
 
-[!ref](omninx/download)
+[!ref](download)
 
 ### 4.4 OmniNX installieren
 
-[!ref](omninx/installation_omninx)
+[!ref](installation_omninx)
 
 ### 4.5 emuMMC erstellen
 
-[!ref](omninx/emummc_erstellen)
+[!ref](emummc_erstellen)
 
 ### 4.6 Pack einrichten (Forwarder, Zeit, Basics)
 
-[!ref](omninx/pack_einrichten)
+[!ref](pack_einrichten)
 
 ### 4.7 Updates und optionale OC-Themen
 
@@ -75,36 +75,5 @@ Die Seite ist trotzdem praktisch als kompakte Gegenprüfung:
 [!ref](../overclocking)
 
 ---
-
-## Phase 5: Nach der Einrichtung
-
-[!ref](../nachher/autoboot_aktivieren)
-[!ref](../nachher/auto_rcm_aktivieren)
-[!ref](../nachher/forwarder_installieren)
-
----
-
-## Legacy/Deprecated: NiklasCFW Pack (nur Fallback)
-
-Der NiklasCFW Pack bleibt erreichbar, ist aber **nicht mehr der Standardpfad** dieser Docs.
-
-[!ref](../niklascfw-pack/guide1.4.0)
-[!ref](../niklascfw-pack/guide2)
-[!ref](../niklascfw-pack/guide3)
-[!ref](../niklascfw-pack/guide4)
-[!ref](../niklascfw-pack/guide5)
-
-Vertiefung: Ordner **„Gut zu wissen"**, **„Fehlerbehebung"**, **„Erweiterte Guides"** in der Seitenleiste.
-
----
-
-## Kurzüberblick als Liste
-
-1. Modell & SD → FAT32  
-2. RCM + Payload  
-3. **Backup**  
-4. **OmniNX** installieren und einrichten  
-5. Nachbereitung (Autoboot, Forwarder, …)  
-6. Optional: **NiklasCFW Pack (Deprecated Fallback)**
 
 Wenn du bei einem Schritt hängen bleibst, zuerst unter **Fehlerbehebung** nachschlagen oder die verlinkte Detailseite erneut komplett lesen.

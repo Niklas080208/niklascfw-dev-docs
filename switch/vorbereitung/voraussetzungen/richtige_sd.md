@@ -12,6 +12,17 @@ Die microSD-Karte ist das Herzstück des Systems. Hier liegen Spiele, Homebrew-A
 
 ---
 
+## Kurzfassung
+
+- **Größe:** Mindestens **256 GB** (V1/V2/Lite), **512 GB** für OLED empfohlen.
+- **Qualität:** Schnelle, zuverlässige Markenkarte (z. B. Samsung EVO Plus/Select, Kingston Canvas Go! Plus).
+- **Wichtig für CFW:** Gute Random-Performance (IOPS) sorgt für stabilere Installationen und weniger Lese-/Schreibfehler.
+- **Vermeiden:** Sehr langsame oder No-Name-Karten, da sie emuMMC und Homebrew unnötig ausbremsen.
+
+https://www.youtube.com/watch?v=WW53mOqHqIY
+
+---
+
 ## Warum Geschwindigkeit entscheidend ist
 
 CFW-Nutzer belasten die SD-Karte deutlich stärker als normale Switch-User:
@@ -72,19 +83,19 @@ Für eine reibungslose Nutzung der Nintendo Switch mit CFW empfehlen sich vor al
 
 **Preis-Leistungs-Sieger** mit soliden Geschwindigkeiten für alle Standard-Anwendungen. Diese Speicherkarte gibt es nur bei Amazon.
 
-![|234x140](/images/switch/vorbereitung/sd-karte/evoselect.jpg)
+![|234x140](/images/switch/vorbereitung/sd-karte/evoselect.png)
 
 ### Samsung Evo Plus
 
 **Noch schneller beim Schreiben**, ideal für häufige Installationen und große Spielebibliotheken.
 
-![|234x140](/images/switch/vorbereitung/sd-karte/evoplus.jpg)
+![|234x140](/images/switch/vorbereitung/sd-karte/evoplus.png)
 
 ### Samsung Pro Plus
 
 **High-End-Performance** mit maximaler Zuverlässigkeit, perfekt für Power-User und große Datenmengen.
 
-![|234x140](/images/switch/vorbereitung/sd-karte/proplus.jpg)
+![|234x140](/images/switch/vorbereitung/sd-karte/proplus.png)
 
 ---
 

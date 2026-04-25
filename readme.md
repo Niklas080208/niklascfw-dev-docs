@@ -22,10 +22,10 @@ Diese Dokumentation führt dich mit einem **roten Faden** von der **Vorbereitung
     <li><a href="/switch/system-backup/nand_backup">NAND Backup erstellen</a></li>
     <li><a href="/switch/vorbereitung/omninx/einfuehrung">OmniNX Einführung</a></li>
     <li><a href="/switch/vorbereitung/omninx/voraussetzungen">OmniNX Voraussetzungen</a></li>
-    <li><a href="/switch/vorbereitung/omninx/download">OmniNX Download</a></li>
-    <li><a href="/switch/vorbereitung/omninx/installation_omninx">OmniNX Installation</a></li>
-    <li><a href="/switch/vorbereitung/omninx/emummc_erstellen">OmniNX emuMMC erstellen</a></li>
-    <li><a href="/switch/vorbereitung/omninx/pack_einrichten">OmniNX Pack einrichten</a></li>
+    <li><a href="/switch/vorbereitung/download">OmniNX Download</a></li>
+    <li><a href="/switch/vorbereitung/installation_omninx">OmniNX Installation</a></li>
+    <li><a href="/switch/vorbereitung/emummc_erstellen">OmniNX emuMMC erstellen</a></li>
+    <li><a href="/switch/vorbereitung/pack_einrichten">OmniNX Pack einrichten</a></li>
     <li><a href="/switch/vorbereitung/omninx/updates/omninx-update">OmniNX Pack Update</a></li>
     <li><a href="/switch/vorbereitung/omninx/updates/firmware-update">Switch Firmware Update</a></li>
     <li><a href="/switch/vorbereitung/omninx/overclocking">Overclocking (optional)</a></li>
