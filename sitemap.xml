@@ -1,251 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/roter_faden/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/roter_faden/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/voraussetzungen/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/sd_format/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/sd_format/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/omninx/einfuehrung/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/omninx/einfuehrung/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/system-backup/nand_backup/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/system-backup/nand_backup/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/system-backup/sd_partition_backup_restore/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/system-backup/sd_partition_backup_restore/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/system-backup/nand_backup_restore/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/system-backup/nand_backup_restore/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/nachher/auto_rcm_aktivieren/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/nachher/auto_rcm_aktivieren/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/nachher/autoboot_aktivieren/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/nachher/autoboot_aktivieren/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/nachher/forwarder_installieren/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/nachher/forwarder_installieren/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/nachher/dbi_time/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/nachher/dbi_time/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/omninx/pack_einrichten/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/omninx/pack_einrichten/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/voraussetzungen/switch_ungepatcht_check/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/switch_ungepatcht_check/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/voraussetzungen/richtige_sd/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/richtige_sd/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/omninx/download/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/omninx/download/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/omninx/installation_omninx/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/omninx/installation_omninx/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/omninx/emummc_erstellen/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/omninx/emummc_erstellen/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_mac/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_mac/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_linux/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_linux/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/overclocking/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/overclocking/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/android-und-linux-installieren-ultrahand/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/android-und-linux-installieren-ultrahand/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/lakka_install/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/lakka_install/</loc>
     <lastmod>2026-04-18T20:28:43Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/retroarch_install/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/retroarch_install/</loc>
     <lastmod>2026-03-29T11:43:48Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/system/emummc_arten/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/emummc_arten/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/system/emummc_downgrade/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/emummc_downgrade/</loc>
     <lastmod>2026-04-06T23:07:04Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/system/nxmigatorpro/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/nxmigatorpro/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/system/switch_ruecksetzmodus/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/switch_ruecksetzmodus/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/customization/theme_install/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/customization/theme_install/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/customization/title_override/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/customization/title_override/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/updates/omninx-update/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/updates/omninx-update/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide1.4.0/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide1.4.0/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/spiele/spiele_installation_dbi_sphaira/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/spiele/spiele_installation_dbi_sphaira/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/spiele/backups-installieren/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/spiele/backups-installieren/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/spiele/gamecard_mit_spaira_dumpen/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/spiele/gamecard_mit_spaira_dumpen/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/spiele/ofw_to_emummc_guide/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/spiele/ofw_to_emummc_guide/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/updates/firmware-update/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/updates/firmware-update/</loc>
     <lastmod>2026-04-25T15:15:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/spiele/sphaira_games_und_updates_aus_der_ofw_dumpen/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/spiele/sphaira_games_und_updates_aus_der_ofw_dumpen/</loc>
     <lastmod>2026-04-22T20:44:10Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/hb_cfw_tools/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/hb_cfw_tools/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/jksv/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/jksv/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/erweiterte-guides/ofw_to_emummc_guide/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/erweiterte-guides/ofw_to_emummc_guide/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide2/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide2/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/jksv_cloud/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/jksv_cloud/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/prodkeys/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/prodkeys/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/sphaira/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/sphaira/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/ultrahand/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/ultrahand/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide1/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide1/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide3/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide3/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide4/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide4/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/ultrahand_cfwpack/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/apps-tools/ultrahand_cfwpack/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/hardware/switch_macbook/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/hardware/switch_macbook/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/niklascfw-pack/guide5/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/niklascfw-pack/guide5/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/apps-tools/niklascfwdownloadprobleme/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/apps-tools/niklascfwdownloadprobleme/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/apps-tools/ultrahand_oeffnen/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/apps-tools/ultrahand_oeffnen/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/spiele/plza_save/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/spiele/plza_save/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/system-boot/fehlercode_2001-0123_ultrahand_anleitung/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/system-boot/fehlercode_2001-0123_ultrahand_anleitung/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/system-boot/21230011_beheben/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/system-boot/21230011_beheben/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/system-boot/hekate_fix_archive_bits/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/system-boot/hekate_fix_archive_bits/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/system-boot/0100000000000bd00_beheben/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/system-boot/0100000000000bd00_beheben/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/system-boot/420000000000010_beheben_(ldn_mitm)/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/system-boot/420000000000010_beheben_(ldn_mitm)/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/theme-visual/leere_lade_icons_switch_dbifix/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/theme-visual/leere_lade_icons_switch_dbifix/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://docs.niklascfw.de/switch/fehlerbehebung/theme-visual/0100000000000001000_beheben_(custom_theme)/</loc>
+    <loc>https://dev-docs.niklascfw.de/switch/fehlerbehebung/theme-visual/0100000000000001000_beheben_(custom_theme)/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
 </urlset>
