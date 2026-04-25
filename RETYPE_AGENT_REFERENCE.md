@@ -668,7 +668,7 @@ Resolution order: current dir → `_includes`-prefixed → walk up to project ro
 **With parameters:**
 
 ```md
-{{ include "user-card" { name: "Jane", role: "Developer" } }}
+{%{ {{ include "user-card" { name: "Jane", role: "Developer" } }} }%}
 ```
 
 ### Page Properties
