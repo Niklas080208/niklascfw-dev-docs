@@ -4,7 +4,7 @@
 
 ### Vorbereitung & Installation
 
-- [Start: Roter Faden (0 → fertig)](https://dev-docs.niklascfw.de/switch/vorbereitung/roter_faden.md): Von Null bis lauffähiger CFW mit OmniNX als Hauptpfad. NiklasCFW Pack ist als Legacy-Fallback ganz unten verlinkt.
+- [Start: Roter Faden (0 → fertig)](https://dev-docs.niklascfw.de/switch/vorbereitung/roter_faden.md): Von Null bis lauffähiger CFW mit OmniNX als Hauptpfad.
 
 #### Voraussetzungen
 
@@ -14,12 +14,11 @@
 
 ###### RCM Methode
 
-- [Nintendo Switch V1 – Softmod mit Hekate-Payload (Windows)](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_windows.md): Nintendo Switch v1 (unpatched, Seriennummer prüfen)
-- [Nintendo Switch V1 – Softmod mit Hekate-Payload (macOS)](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_mac.md): Es gibt mehrere Möglichkeiten die Payload über macOS an eure Nintendo Switch zu schicken, hier erklären wir euch zwei davon. Einmal via CrystalRCM (ein offline Tool) und einmal per WebRCM (erfordert eine Internetverbindung).
-- [Nintendo Switch V1 – Softmod mit Hekate-Payload (Linux, Android, ChromeOS)](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_linux.md): Mit WebRCM kann der Payload direkt im Browser gesendet werden – ohne zusätzliche Software.
+- [RCM Methode](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/rcm-methode.md): Bevor du den Payload sendest, ist es hilfreich zu verstehen, was bei RCM technisch passiert.
+- [Payload laden (Hekate)](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/payload_laden.md): Wenn deine Switch bereits im RCM ist, kannst du jetzt den Payload (hekate.bin) senden.
 - [Modchip einbauen](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/modchip.md): Wenn deine Konsole als gepatcht erkannt wurde, ist CFW nur mit einem Modchip möglich.
 - [Die richtige Speicherkarte](https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/richtige_sd.md): Die microSD-Karte ist das Herzstück des Systems. Hier liegen Spiele, Homebrew-Apps und oft auch wichtige Systemdaten. Eine minderwertige oder zu langsame Speicherkarte kann dabei nicht nur zu langen Ladezeiten führen, sondern auch zu Datenfehlern, Abstürzen oder gar einem beschädigten Dateisystem.
-- [SD auf FAT32 formatieren](https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe.md): In dieser Anleitung findest du drei verschiedene Methoden, um deine SD-Karte auf FAT32 zu formatieren. Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.
+- [SD auf FAT32 formatieren](https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe.md): In dieser Anleitung findest du drei Wege, um deine SD-Karte auf FAT32 zu formatieren.
 - [OmniNX Setup](https://dev-docs.niklascfw.de/switch/vorbereitung/einfuehrung.md): OmniNX ist ein vollständiges Custom-Firmware-Setup für die Nintendo Switch. Es ist in drei Varianten verfügbar und legt Wert auf Flexibilität und Modularität.
 - [OmniNX Herunterladen](https://dev-docs.niklascfw.de/switch/vorbereitung/download.md): Gehe zu den OmniNX Releases: git.niklascfw.de/OmniNX/OmniNX/releases
 - [Installation von OmniNX](https://dev-docs.niklascfw.de/switch/vorbereitung/installation_omninx.md): Nach dem Download und dem Kopieren des Packs auf die SD-Karte startest du hier den OmniNX Installer und führst die Installation durch.
@@ -34,7 +33,7 @@
 
 ### Nachher
 
-- [AutoRCM aktivieren](https://dev-docs.niklascfw.de/switch/nachher/auto_rcm_aktivieren.md): Sofern du eine Switch ohne Modchip hast, kannst du durch die Funktion Auto RCM den JIG umgehen und direkt über Power und RCM Loader oder anderen RCM Tools siehe: https://docs.niklascfw.de/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows/ in Hekate booten.
+- [AutoRCM aktivieren](https://dev-docs.niklascfw.de/switch/nachher/auto_rcm_aktivieren.md): Sofern du eine Switch ohne Modchip hast, kannst du durch die Funktion Auto RCM den JIG umgehen und direkt über Power und RCM Loader oder andere RCM-Tools in Hekate booten.
 - [Autoboot aktivieren](https://dev-docs.niklascfw.de/switch/nachher/autoboot_aktivieren.md): Sobald du deine Switch gemoddet hast, kannst du durch die Funktion Autoboot automatisch in die CFW booten, ohne über Hekate die CFW auswählen zu müssen. Dies funktioniert mit jeder gemoddeten Switch.
 - [Forwarder installieren mit Sphaira](https://dev-docs.niklascfw.de/switch/nachher/forwarder_installieren.md): Forwarder sind Verknüpfungen auf dem Homescreen der Switch, über den sich Homebrews oder Apps direkt starten lassen. Diese werden so immer im Highmemory-Mode ausgeführt.
 - [Uhrzeit mit DBI synchronisieren](https://dev-docs.niklascfw.de/switch/nachher/dbi_time.md): Hinweis: Die Switch muss zwingend mit dem Internet verbunden sein.

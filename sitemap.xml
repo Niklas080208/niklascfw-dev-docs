@@ -2,30 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/roter_faden/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/einfuehrung/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/pack_einrichten/</loc>
     <lastmod>2026-04-25T19:11:26Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/installation_omninx/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
-  </url>
-  <url>
     <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe/</loc>
+    <lastmod>2026-04-30T19:59:13Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/einfuehrung/</loc>
     <lastmod>2026-04-25T19:11:26Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/download/</loc>
+    <lastmod>2026-04-25T19:11:26Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/installation_omninx/</loc>
     <lastmod>2026-04-25T19:11:26Z</lastmod>
   </url>
   <url>
@@ -37,24 +33,28 @@
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-docs.niklascfw.de/switch/system-backup/nand_backup_restore/</loc>
-    <lastmod>2026-03-28T18:01:22Z</lastmod>
-  </url>
-  <url>
     <loc>https://dev-docs.niklascfw.de/switch/system-backup/sd_partition_backup_restore/</loc>
     <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/richtige_sd/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/</loc>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-docs.niklascfw.de/switch/system-backup/nand_backup_restore/</loc>
+    <lastmod>2026-03-28T18:01:22Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/nachher/auto_rcm_aktivieren/</loc>
-    <lastmod>2026-03-28T18:31:36Z</lastmod>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/nachher/autoboot_aktivieren/</loc>
     <lastmod>2026-03-28T18:31:36Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/richtige_sd/</loc>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/nachher/forwarder_installieren/</loc>
@@ -65,8 +65,16 @@
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/</loc>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
+  </url>
+  <url>
     <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/modchip/</loc>
     <lastmod>2026-04-25T19:11:26Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/payload_laden/</loc>
+    <lastmod>2026-04-30T23:14:13Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/erweiterte-systeme/android-und-linux-installieren-ultrahand/</loc>
@@ -85,24 +93,12 @@
     <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/nxmigatorpro/</loc>
-    <lastmod>2026-03-28T18:31:36Z</lastmod>
-  </url>
-  <url>
     <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/emummc_downgrade/</loc>
     <lastmod>2026-04-06T23:07:04Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_windows/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_mac/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-docs.niklascfw.de/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/switch_v1_softmod_linux/</loc>
-    <lastmod>2026-04-25T19:11:26Z</lastmod>
+    <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/nxmigatorpro/</loc>
+    <lastmod>2026-03-28T18:31:36Z</lastmod>
   </url>
   <url>
     <loc>https://dev-docs.niklascfw.de/switch/gut-zu-wissen/system/switch_ruecksetzmodus/</loc>

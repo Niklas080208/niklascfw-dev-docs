@@ -21,7 +21,7 @@ Gib dort deine Seriennummer ein (findest du auf dem Aufkleber am Gerät oder in 
 !!!success Ungepatcht
 Du kannst mit dem Guide weitermachen. CFW per RCM/Softmod ist möglich.
 
-Nächster Schritt: [RCM-Methode wählen](rcm-methode/switch_v1_softmod_windows)
+Nächster Schritt: [Payload laden](rcm-methode/payload_laden)
 !!!
 
 !!!warning Möglicherweise gepatcht

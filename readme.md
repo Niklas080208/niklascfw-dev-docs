@@ -16,9 +16,8 @@ Diese Dokumentation führt dich mit einem **roten Faden** von der **Vorbereitung
     <li><a href="/switch/vorbereitung/switch_ungepatcht_check">Switch Modell prüfen</a></li>
     <li><a href="/switch/vorbereitung/richtige_sd">Richtige SD-Karte</a></li>
     <li><a href="/switch/vorbereitung/sd_format">SD auf FAT32 formatieren</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows"><img class="niklas-toc-icon" src="/assets/win11.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – Windows</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_mac"><img class="niklas-toc-icon" src="/assets/apple.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – macOS</a></li>
-    <li><a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_linux"><img class="niklas-toc-icon" src="/assets/linux.png" alt="" width="18" height="18" aria-hidden="true" /> RCM Softmod – Linux, Android, ChromeOS</a></li>
+    <li><a href="/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/rcm-methode"><img class="niklas-toc-icon" src="/assets/rcm-jig.png" alt="" width="18" height="18" aria-hidden="true" /> RCM-Methode verstehen</a></li>
+    <li><a href="/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/payload_laden"><img class="niklas-toc-icon" src="/assets/win11.png" alt="" width="18" height="18" aria-hidden="true" /> Payload laden – Windows/macOS/Linux</a></li>
     <li><a href="/switch/system-backup/nand_backup">NAND Backup erstellen</a></li>
     <li><a href="/switch/vorbereitung/omninx/einfuehrung">OmniNX Einführung</a></li>
     <li><a href="/switch/vorbereitung/omninx/voraussetzungen">OmniNX Voraussetzungen</a></li>
@@ -179,7 +178,7 @@ Diese Dokumentation führt dich mit einem **roten Faden** von der **Vorbereitung
 <h3>🎮 Switch V1 (2017-2018)</h3>
 <p><strong>✅ Vollständig modbar</strong></p>
 <p>RCM + Softmod möglich</p>
-<a href="/switch/vorbereitung/rcm-methode/switch_v1_softmod_windows" style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none;">→ Guide starten</a>
+<a href="/switch/vorbereitung/voraussetzungen/serial_check/rcm-methode/payload_laden" style="background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none;">→ Guide starten</a>
 </div>
 
 <div style="border: 2px solid #dc3545; border-radius: 8px; padding: 1rem; text-align: center;">

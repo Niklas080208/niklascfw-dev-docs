@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830452957450">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830898948048">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>SD auf FAT32 formatieren</title>
     <meta name="title" content="SD auf FAT32 formatieren">
-    <meta name="description" content="In dieser Anleitung findest du drei verschiedene Methoden, um deine SD-Karte auf FAT32 zu formatieren. Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.">
+    <meta name="description" content="In dieser Anleitung findest du drei Wege, um deine SD-Karte auf FAT32 zu formatieren.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe/">
     <meta property="og:title" content="SD auf FAT32 formatieren">
-    <meta property="og:description" content="In dieser Anleitung findest du drei verschiedene Methoden, um deine SD-Karte auf FAT32 zu formatieren. Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.">
+    <meta property="og:description" content="In dieser Anleitung findest du drei Wege, um deine SD-Karte auf FAT32 zu formatieren.">
     <meta property="og:image" content="https://dev-docs.niklascfw.de/images/switch/vorbereitung/sd-karte/rufus.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://dev-docs.niklascfw.de/switch/vorbereitung/sd_wipe/">
     <meta name="twitter:title" content="SD auf FAT32 formatieren">
-    <meta name="twitter:description" content="In dieser Anleitung findest du drei verschiedene Methoden, um deine SD-Karte auf FAT32 zu formatieren. Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.">
+    <meta name="twitter:description" content="In dieser Anleitung findest du drei Wege, um deine SD-Karte auf FAT32 zu formatieren.">
     <meta name="twitter:image" content="https://dev-docs.niklascfw.de/images/switch/vorbereitung/sd-karte/rufus.png">
     <meta name="twitter:image:alt" content="SD auf FAT32 formatieren">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="/assets/favicon.png" />
-    <link href="/resources/css/retype.css?v=4.5.3.830452957450" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=4.5.3.830898948048" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.830452957450" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=4.5.3.830898948048" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.830452957450" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=4.5.3.830898948048" data-turbo-eval="false" defer></script>
 
     <link rel="stylesheet" href="/static/css/toc-tree.css" />
 
@@ -191,86 +191,174 @@
 
                 <!-- Page content  -->
 <h1 id="sd-auf-fat32-formatieren">SD auf FAT32 formatieren</h1>
-<p>In dieser Anleitung findest du <strong>drei verschiedene Methoden</strong>, um deine SD-Karte auf <strong>FAT32</strong> zu formatieren.<br />
-Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.</p>
+<p>In dieser Anleitung findest du drei Wege, um deine SD-Karte auf <strong>FAT32</strong> zu formatieren.</p>
 <hr>
-<h2 id="voraussetzungen">Voraussetzungen</h2>
-<div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<h4 style="color: #856404; margin-top: 0;">⚠️ Wichtig</h4>
-<ul style="color: #212529; margin-bottom: 0;">
-<li>Ein <strong>SD-Kartenleser</strong> ist erforderlich!</li>
-<li>Sichere alle wichtigen Daten vorher, da beim Formatieren <strong>alles gelöscht</strong> wird!</li>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Wichtig</h5>
+<ul>
+<li>Beim Formatieren werden alle Daten auf der SD-Karte gelöscht.</li>
+<li>Sichere vorher alles, was du behalten willst.</li>
+<li>Ein SD-Kartenleser ist für PC-Methoden erforderlich.</li>
 </ul>
+        </div>
+    </div>
 </div>
 <hr>
 <h2 id="option-1-mit-rufus">Option 1: Mit Rufus</h2>
-<h3 id="schritt-1-rufus-herunterladen">Schritt 1: Rufus herunterladen</h3>
-<p>Lade <strong>Rufus</strong> herunter: <a href="https://rufus.ie/de/">https://rufus.ie/de/</a></p>
-<h3 id="schritt-2-formatierung-durchführen">Schritt 2: Formatierung durchführen</h3>
-<ol>
-<li>Öffne Rufus und stelle alles so ein wie in den Beispielbild.</li>
-</ol>
-<p><strong>Aktiviere bei <strong>1TB SD-Karten</strong> den <strong>Haken für USB-Festplatten</strong>.</strong></p>
+<doc-steps>
+   <doc-step id="rufus-herunterladen" step-number="1">
+      <template #title>Rufus herunterladen</template>
+<p>Lade Rufus hier herunter: <a href="https://rufus.ie/de/">https://rufus.ie/de/</a></p>
+   </doc-step>
+   <doc-step id="einstellungen-übernehmen" step-number="2">
+      <template #title>Einstellungen übernehmen</template>
+<p>Öffne Rufus und übernimm die Einstellungen aus dem Beispielbild.</p>
+<p>Bei <strong>1 TB SD-Karten</strong> aktiviere den Haken für <strong>USB-Festplatten</strong>.</p>
 <figure class="content-center">
     <img src="/images/switch/vorbereitung/sd-karte/rufus.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="560" height="336" />
     <figcaption class="caption"></figcaption>
 </figure>
-<ol start="2">
-<li>
-<p>Wähle deinen <strong>SD-Datenträger</strong> oben in der Liste aus.<br />
-<em>Achtung: Der Name kann bei jedem unterschiedlich sein!</em></p>
-</li>
-<li>
-<p>Erweiterte Laufwerkseigenschaften einblenden</p>
-</li>
-<li>
-<p>Klicke auf <strong>Start</strong>, um die Formatierung zu beginnen.</p>
-</li>
-</ol>
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>💡 <strong>Tipp:</strong> Rufus löscht beim Formatieren alle Partitionen! </small></p>
+   </doc-step>
+   <doc-step id="laufwerk-prüfen" step-number="3">
+      <template #title>Laufwerk prüfen</template>
+<p>Wähle den richtigen SD-Datenträger oben in der Liste aus.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Achtung</h5>
+<p>Der Laufwerksname kann je nach System anders aussehen. Prüfe sorgfältig, dass es wirklich die SD-Karte ist.</p>
+        </div>
+    </div>
 </div>
+   </doc-step>
+   <doc-step id="formatierung-starten" step-number="4">
+      <template #title>Formatierung starten</template>
+<p>Blende die erweiterten Laufwerkseigenschaften ein und klicke auf <strong>Start</strong>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Hinweis</h5>
+<p>Rufus löscht beim Formatieren alle Partitionen.</p>
+        </div>
+    </div>
+</div>
+   </doc-step>
+</doc-steps>
 <hr>
 <h2 id="option-2-über-hekate-switch">Option 2: Über Hekate (Switch)</h2>
-<h3 id="schritt-1-hekate-starten">Schritt 1: Hekate starten</h3>
-<ol>
-<li>Entnehme den <strong>bootloader Ordner</strong> und die <strong>payload-Datei</strong> aus deinem Pack.</li>
-<li>Starte die Switch in <strong>Hekate</strong>.</li>
-</ol>
+<doc-steps>
+   <doc-step id="hekate-starten" step-number="1">
+      <template #title>Hekate starten</template>
+<p>Entnehme den <strong>bootloader-Ordner</strong> und die <strong>payload-Datei</strong> aus deinem Pack und starte die Switch in Hekate.</p>
 <figure class="content-center">
     <img src="/images/switch/vorbereitung/sd-karte/hekate_format1.jpg" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="700" height="420" />
     <figcaption class="caption"></figcaption>
 </figure>
-<h3 id="schritt-2-sd-karte-formatieren">Schritt 2: SD-Karte formatieren</h3>
-<ol>
-<li>Gehe zu: <strong>Tools</strong> → <strong>Partition SD-Karten</strong></li>
-<li>Wenn du bereits eine <strong>emuMMC-Partition</strong> auf der SD hast, kannst du sie gleich hier erstellen.</li>
-<li>Klicke auf <strong>Next Step</strong> Hekate erstellt dann automatisch aus deiner <strong>exFAT SD</strong> eine <strong>FAT32 SD</strong>.</li>
-</ol>
+   </doc-step>
+   <doc-step id="sd-karte-in-hekate-formatieren" step-number="2">
+      <template #title>SD-Karte in Hekate formatieren</template>
+<p>Gehe zu <strong>Tools</strong> → <strong>Partition SD Card</strong>.
+Wenn du eine <strong>emuMMC-Partition</strong> planst, kannst du sie in diesem Schritt direkt mit anlegen.
+Klicke auf <strong>Next Step</strong>. Hekate erstellt aus exFAT automatisch FAT32.</p>
 <figure class="content-center">
     <img src="/images/switch/vorbereitung/sd-karte/hekate_format2.jpg" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="700" height="420" />
     <figcaption class="caption"></figcaption>
 </figure>
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>💡 <strong>Hinweis:</strong> Bei dem Bild handelt es sich nur um eine Beispiel Formatierung. Man könnte auch ohne auswahl über Next Step auf FAT32 formatieren. </small></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Hinweis</h5>
+<p>Bei dem Bild handelt es sich nur um eine Beispiel-Formatierung. Du kannst auch ohne Auswahl direkt über <strong>Next Step</strong> auf FAT32 formatieren.</p>
+        </div>
+    </div>
 </div>
+   </doc-step>
+</doc-steps>
 <hr>
 <h2 id="option-3-mit-guiformat">Option 3: Mit GUIFormat</h2>
-<ol>
-<li>Lade das Tool <strong>GUIFormat</strong> herunter.</li>
-<li>Wähle deine SD-Karte im Tool aus. <strong>Hierbei ist zu beachten das du den richtigen Laufwerksbuchstaben erwischst, denn das Tool erkennt auch Festplatten!</strong></li>
-<li>Stelle sicher, dass als <strong>Dateisystem FAT32</strong> ausgewählt ist. Und die vorgebenenen Parameter zu nutzen.</li>
-<li>Klicke auf <strong>Start</strong>, um die Formatierung zu starten. Geht nur wenn alle Fenster die mit Windows Explorer zu tun haben geschlossen wurden.</li>
-</ol>
+<doc-steps>
+   <doc-step id="guiformat-starten" step-number="1">
+      <template #title>GUIFormat starten</template>
+<p>Lade <strong>GUIFormat</strong> herunter und starte das Tool.</p>
+   </doc-step>
+   <doc-step id="laufwerk-und-dateisystem-setzen" step-number="2">
+      <template #title>Laufwerk und Dateisystem setzen</template>
+<p>Wähle die SD-Karte mit dem richtigen Laufwerksbuchstaben aus.
+Setze als Dateisystem <strong>FAT32</strong> und nutze die vorgegebenen Parameter.</p>
+   </doc-step>
+   <doc-step id="explorer-fenster-schließen" step-number="3">
+      <template #title>Explorer-Fenster schließen</template>
+<p>Schließe alle geöffneten Windows-Explorer-Fenster, die auf die SD-Karte zugreifen.</p>
 <figure class="content-center">
     <img src="/images/switch/vorbereitung/sd-karte/allefensterschliessen.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="500" height="320" />
     <figcaption class="caption"></figcaption>
 </figure>
-<p>Fertig – deine SD-Karte ist jetzt im <strong>FAT32-Format</strong>!</p>
+   </doc-step>
+   <doc-step id="formatierung-starten-1" step-number="4">
+      <template #title>Formatierung starten</template>
+<p>Klicke auf <strong>Start</strong> und warte bis der Vorgang abgeschlossen ist.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Fertig</h5>
+<p>Die SD-Karte ist jetzt im <strong>FAT32-Format</strong>.</p>
+        </div>
+    </div>
+</div>
 <figure class="content-center">
     <img src="/images/switch/vorbereitung/sd-karte/guiformat.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="420" height="700" />
     <figcaption class="caption"></figcaption>
 </figure>
+   </doc-step>
+</doc-steps>
 <hr>
 <h2 id="zusammenfassung">Zusammenfassung</h2>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -296,14 +384,29 @@ Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dic
 <tr>
 <td><strong>GUIFormat</strong></td>
 <td>Windows</td>
-<td>Nur zur Not Verwenden</td>
+<td>Fallback, wenn Rufus nicht genutzt wird</td>
 </tr>
 </tbody>
 </table>
 </div>
 <hr>
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>ℹ️ <strong>Hinweis:</strong> Nach der Formatierung kannst du deine Daten (z. B. CFW-Dateien, emuMMC, etc.) wieder auf die Karte kopieren.</small></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Hinweis</h5>
+<p>Nach der Formatierung kannst du deine Daten (z. B. CFW-Dateien, emuMMC usw.) wieder auf die Karte kopieren.</p>
+        </div>
+    </div>
 </div>
 
                 

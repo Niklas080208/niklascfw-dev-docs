@@ -4,11 +4,10 @@ Die microSD-Karte ist das Herzstück des Systems. Hier liegen Spiele, Homebrew-A
 
 ---
 
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<h4 style="color: #1565C0; margin-top: 0;">💡 Hinweis</h4>
-<p style="color: #212529; margin-bottom: 0;">Bei einer <strong>Switch V1, V2 und Lite</strong> werden mindestens <strong>256GB</strong> an Speicher empfohlen.</p>
-<p style="color: #212529; margin-bottom: 0;">Bei einer <strong>Switch OLED</strong> werden sogar <strong>512GB</strong> empfohlen!</p>
-</div>
+!!!info Hinweis
+Bei einer **Switch V1, V2 und Lite** werden mindestens **256 GB** Speicher empfohlen.  
+Bei einer **Switch OLED** werden **512 GB** empfohlen.
+!!!
 
 ---
 

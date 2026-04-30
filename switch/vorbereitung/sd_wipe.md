@@ -1,84 +1,91 @@
 # SD auf FAT32 formatieren
 
-In dieser Anleitung findest du **drei verschiedene Methoden**, um deine SD-Karte auf **FAT32** zu formatieren.  
-Bitte lies dir alle Punkte aufmerksam durch und wähle die Methode, die für dich am besten passt.
+In dieser Anleitung findest du drei Wege, um deine SD-Karte auf **FAT32** zu formatieren.
 
 ---
 
-## Voraussetzungen
-
-<div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<h4 style="color: #856404; margin-top: 0;">⚠️ Wichtig</h4>
-<ul style="color: #212529; margin-bottom: 0;">
-<li>Ein <strong>SD-Kartenleser</strong> ist erforderlich!</li>
-<li>Sichere alle wichtigen Daten vorher, da beim Formatieren <strong>alles gelöscht</strong> wird!</li>
-</ul>
-</div>
+!!!warning Wichtig
+- Beim Formatieren werden alle Daten auf der SD-Karte gelöscht.
+- Sichere vorher alles, was du behalten willst.
+- Ein SD-Kartenleser ist für PC-Methoden erforderlich.
+!!!
 
 ---
 
 ## Option 1: Mit Rufus
 
-### Schritt 1: Rufus herunterladen
+>>> Rufus herunterladen
+Lade Rufus hier herunter: [https://rufus.ie/de/](https://rufus.ie/de/)
 
-Lade **Rufus** herunter: [https://rufus.ie/de/](https://rufus.ie/de/)
+>>> Einstellungen übernehmen
+Öffne Rufus und übernimm die Einstellungen aus dem Beispielbild.
 
-### Schritt 2: Formatierung durchführen
-
-1. Öffne Rufus und stelle alles so ein wie in den Beispielbild.
-
-**Aktiviere bei **1TB SD-Karten** den **Haken für USB-Festplatten**.**
+Bei **1 TB SD-Karten** aktiviere den Haken für **USB-Festplatten**.
 
 ![|560x336](/images/switch/vorbereitung/sd-karte/rufus.png)
 
-2. Wähle deinen **SD-Datenträger** oben in der Liste aus.  
-   *Achtung: Der Name kann bei jedem unterschiedlich sein!*
+>>> Laufwerk prüfen
+Wähle den richtigen SD-Datenträger oben in der Liste aus.
 
-3. Erweiterte Laufwerkseigenschaften einblenden
+!!!warning Achtung
+Der Laufwerksname kann je nach System anders aussehen. Prüfe sorgfältig, dass es wirklich die SD-Karte ist.
+!!!
 
-4. Klicke auf **Start**, um die Formatierung zu beginnen.
+>>> Formatierung starten
+Blende die erweiterten Laufwerkseigenschaften ein und klicke auf **Start**.
 
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>💡 <strong>Tipp:</strong> Rufus löscht beim Formatieren alle Partitionen! </small></p>
-</div>
+!!!warning Hinweis
+Rufus löscht beim Formatieren alle Partitionen.
+!!!
+
+>>>
 
 ---
 
 ## Option 2: Über Hekate (Switch)
 
-### Schritt 1: Hekate starten
-
-1. Entnehme den **bootloader Ordner** und die **payload-Datei** aus deinem Pack.
-2. Starte die Switch in **Hekate**.
+>>> Hekate starten
+Entnehme den **bootloader-Ordner** und die **payload-Datei** aus deinem Pack und starte die Switch in Hekate.
 
 ![|700x420](/images/switch/vorbereitung/sd-karte/hekate_format1.jpg)
 
-### Schritt 2: SD-Karte formatieren
-
-1. Gehe zu: **Tools** → **Partition SD-Karten**
-2. Wenn du bereits eine **emuMMC-Partition** auf der SD hast, kannst du sie gleich hier erstellen.
-3. Klicke auf **Next Step** Hekate erstellt dann automatisch aus deiner **exFAT SD** eine **FAT32 SD**.
+>>> SD-Karte in Hekate formatieren
+Gehe zu **Tools** → **Partition SD Card**.
+Wenn du eine **emuMMC-Partition** planst, kannst du sie in diesem Schritt direkt mit anlegen.
+Klicke auf **Next Step**. Hekate erstellt aus exFAT automatisch FAT32.
 
 ![|700x420](/images/switch/vorbereitung/sd-karte/hekate_format2.jpg)
+!!!info Hinweis
+Bei dem Bild handelt es sich nur um eine Beispiel-Formatierung. Du kannst auch ohne Auswahl direkt über **Next Step** auf FAT32 formatieren.
+!!!
 
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>💡 <strong>Hinweis:</strong> Bei dem Bild handelt es sich nur um eine Beispiel Formatierung. Man könnte auch ohne auswahl über Next Step auf FAT32 formatieren. </small></p>
-</div>
+>>>
 
 ---
 
 ## Option 3: Mit GUIFormat
 
-1. Lade das Tool **GUIFormat** herunter.
-2. Wähle deine SD-Karte im Tool aus. **Hierbei ist zu beachten das du den richtigen Laufwerksbuchstaben erwischst, denn das Tool erkennt auch Festplatten!**
-3. Stelle sicher, dass als **Dateisystem FAT32** ausgewählt ist. Und die vorgebenenen Parameter zu nutzen. 
-4. Klicke auf **Start**, um die Formatierung zu starten. Geht nur wenn alle Fenster die mit Windows Explorer zu tun haben geschlossen wurden. 
+>>> GUIFormat starten
+Lade **GUIFormat** herunter und starte das Tool.
+
+>>> Laufwerk und Dateisystem setzen
+Wähle die SD-Karte mit dem richtigen Laufwerksbuchstaben aus.
+Setze als Dateisystem **FAT32** und nutze die vorgegebenen Parameter.
+
+>>> Explorer-Fenster schließen
+Schließe alle geöffneten Windows-Explorer-Fenster, die auf die SD-Karte zugreifen.
 
 ![|500x320](/images/switch/vorbereitung/sd-karte/allefensterschliessen.png)
+>>> Formatierung starten
+Klicke auf **Start** und warte bis der Vorgang abgeschlossen ist.
 
-Fertig – deine SD-Karte ist jetzt im **FAT32-Format**!
+!!!success Fertig
+Die SD-Karte ist jetzt im **FAT32-Format**.
+!!!
 
 ![|420x700](/images/switch/vorbereitung/sd-karte/guiformat.png)
+
+>>>
 
 ---
 
@@ -88,10 +95,10 @@ Fertig – deine SD-Karte ist jetzt im **FAT32-Format**!
 |---------|-----------|--------------|
 | **Rufus** | Windows | Einfache GUI, ideal für große Karten |
 | **Hekate** | Nintendo Switch | Direktes FAT32-Formatieren aus Hekate |
-| **GUIFormat** | Windows | Nur zur Not Verwenden |
+| **GUIFormat** | Windows | Fallback, wenn Rufus nicht genutzt wird |
 
 ---
 
-<div style="background-color: #e7f3ff; border-left: 4px solid #2196F3; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
-<p style="color: #212529; margin: 0;"><small>ℹ️ <strong>Hinweis:</strong> Nach der Formatierung kannst du deine Daten (z. B. CFW-Dateien, emuMMC, etc.) wieder auf die Karte kopieren.</small></p>
-</div>
+!!!info Hinweis
+Nach der Formatierung kannst du deine Daten (z. B. CFW-Dateien, emuMMC usw.) wieder auf die Karte kopieren.
+!!!

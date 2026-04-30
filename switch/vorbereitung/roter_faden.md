@@ -4,7 +4,7 @@ Diese Seite ist der **rote Faden** durch die Dokumentation: Du kannst Schritt f�
 
 !!!success Hauptpfad dieser Docs
 **OmniNX ist ab jetzt der primäre Installationsweg** in dieser Dokumentation.  
-Der **NiklasCFW Pack** bleibt als **Legacy/Deprecated-Fallback** erhalten und ist weiter unten separat verlinkt.
+Die folgenden Phasen zeigen den aktuellen, empfohlenen Ablauf von Vorbereitung bis fertigem Setup.
 !!!
 
 ---
@@ -19,11 +19,10 @@ Der **NiklasCFW Pack** bleibt als **Legacy/Deprecated-Fallback** erhalten und is
 
 ## Phase 2: RCM und erster Payload
 
-**RCM Softmod** (dein System wählen):
+**RCM Softmod**:
 
-[!ref text="Windows"](rcm-methode/switch_v1_softmod_windows)
-[!ref text="macOS"](rcm-methode/switch_v1_softmod_mac)
-[!ref text="Linux, Android, ChromeOS"](rcm-methode/switch_v1_softmod_linux)
+[!ref text="RCM-Methode verstehen"](voraussetzungen/serial_check/rcm-methode/rcm-methode.md)
+[!ref text="Payload laden (Windows/macOS/Linux)"](voraussetzungen/serial_check/rcm-methode/payload_laden)
 
 Damit erreichst du **Hekate** bzw. den ersten Start über Payload – Grundlage für alles Weitere.
 
@@ -47,10 +46,12 @@ Bevor du System- oder emuMMC-Daten veränderst: **SysNAND sichern**.
 
 ### 4.2 Voraussetzungen-Check (optional)
 
-Wenn du Phase 1 und 2 komplett erledigt hast, kannst du den OmniNX-Check meist direkt überspringen.  
-Die Seite ist trotzdem praktisch als kompakte Gegenprüfung:
+Wenn du Phase 1 und 2 komplett erledigt hast, kannst du diesen Check meist überspringen.  
+Als kompakte Gegenprüfung sind diese Seiten sinnvoll:
 
 [!ref](voraussetzungen/serial_check/serial_check.md)
+[!ref](voraussetzungen/richtige_sd)
+[!ref](sd_wipe)
 
 ### 4.3 Download und Dateien auf SD kopieren
 
