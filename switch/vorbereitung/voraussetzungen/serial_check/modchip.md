@@ -5,7 +5,7 @@ Wenn deine Konsole als **<span style="color: #d32f2f;">gepatcht</span>** erkannt
 ## Was das bedeutet
 
 - Ein Modchip ist ein Hardware-Umbau.
-- Der Einbau <span style="color: #fbc02d;">erfordert Löten</span> auf der Hauptplatine.
+- Der Einbau <span style="color: #fbc02d;">erfordert Lötarbeiten</span> auf dem Mainboard.
 - Ohne Erfahrung sollte der Einbau von einem erfahrenen Modder gemacht werden.
 
 !!!warning Hinweis zu Kleinanzeigen und eBay-Umbauten
@@ -40,6 +40,7 @@ Neben ihm haben wir noch viele weitere zuverlässige Umbauer im Team.
 ||| Bild 2
 [![|320x190](/images/switch/vorbereitung/modchip/woody/v1_v2/v1v2_02.jpg)](/images/switch/vorbereitung/modchip/woody/v1_v2/v1v2_02.jpg)
 |||
+*Hinweis: Wenn die Ansicht zu klein ist, Bild einfach antippen/anklicken, um es größer zu öffnen.*
 +++ Lite
 ||| Bild 1
 [![|260x155](/images/switch/vorbereitung/modchip/woody/lite/lite_01.jpg)](/images/switch/vorbereitung/modchip/woody/lite/lite_01.jpg)
@@ -53,6 +54,7 @@ Neben ihm haben wir noch viele weitere zuverlässige Umbauer im Team.
 ||| Bild 5
 [![|260x155](/images/switch/vorbereitung/modchip/woody/lite/lite_05.jpg)](/images/switch/vorbereitung/modchip/woody/lite/lite_05.jpg)
 |||
+*Hinweis: Wenn die Ansicht zu klein ist, Bild einfach antippen/anklicken, um es größer zu öffnen.*
 +++ OLED
 ||| Bild 1
 [![|260x155](/images/switch/vorbereitung/modchip/woody/oled/oled_01.jpg)](/images/switch/vorbereitung/modchip/woody/oled/oled_01.jpg)
@@ -61,6 +63,7 @@ Neben ihm haben wir noch viele weitere zuverlässige Umbauer im Team.
 ||| Bild 3
 [![|260x155](/images/switch/vorbereitung/modchip/woody/oled/oled_03.jpg)](/images/switch/vorbereitung/modchip/woody/oled/oled_03.jpg)
 |||
+*Hinweis: Wenn die Ansicht zu klein ist, Bild einfach antippen/anklicken, um es größer zu öffnen.*
 +++
 
 ## Wie es nicht aussehen sollte
