@@ -33,7 +33,10 @@ Nächster Schritt: [Payload laden](rcm-methode/payload_laden)
 !!!warning Möglicherweise gepatcht
 Unsichere Auskunft. Teste per RCM, ob der Payload-Start funktioniert.
 
-Wenn RCM nicht funktioniert: [Modchip einbauen](modchip)
+Wenn nach dem Laden des Payloads der Bildschirm schwarz bleibt, ist die Konsole sehr wahrscheinlich gepatcht.  
+Prüfe vorher kurz Kabel, USB-Port und Payload-Datei.
+
+Wenn der Payload-Start nicht klappt: [Modchip einbauen](modchip)
 !!!
 
 !!!danger Gepatcht
