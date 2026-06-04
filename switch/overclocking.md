@@ -19,48 +19,55 @@ Falsches bzw. zu starkes Übertakten kann zu **irreparablen Schäden** an der Ha
 
 - **OmniNX OC Pack** installiert
 - Folgende Tools mittels **Package Manager** in Ultrahand aktiviert:
-  - **Packages**
-    - RAM Patcher
-    - OC Switchcraft EOS
   - **Overlays**
-    - sys-clk
-    - Status Monitor
+    - Horizon OC Monitor
+    - Horizon OC Gaea
     - FPSLocker (optional)
     - ReverseNX-RT (optional)
   - **Sysmodules**
     - SaltyNX
 
+!!!info Empfehlung
+Stelle Ultrahand auf **Englisch** um: Die Menüs sind übersichtlicher und die Fehlersuche leichter. Dokumentiere jeden Schritt mit **Notizen**, damit du Änderungen später nachvollziehen kannst.
+!!!
+
 ---
 
-## Tools im Detail
+## Die Tools
 
 | Tool | Beschreibung |
 |------|--------------|
-| **RAM Patcher** | Wird hauptsächlich für die Freischaltung der 8‑GB-RAM-Module verwendet, bringt aber auch die benötigte „kip“-Grundlage mit, um ungedeckeltes Übertakten möglich zu machen. (4‑GB-Rampatch inkl. Kip) |
-| **OC Switchcraft EOS** | Bietet diverse Einstellungen zur Regulierung der maximalen Taktraten von RAM/CPU/GPU sowie die Definition der Spannungswerte für Undervolting oder extremes OC. |
-| **sys-clk** | Mit dem Switch-Sysmodule können die Taktfrequenzen von CPU, GPU und RAM global oder je nach laufender Anwendung und angedocktem Zustand eingestellt werden. |
-| **Status Monitor** | Detailliertes Überwachungstool mit mehreren Menüs: aktuelle Taktraten, Stromverbrauch, Auflösung, FPS. |
+| **Horizon OC Gaea** | Übertaktungsprogramm; erweitertes CPU-, GPU- und RAM-Tuning mit benutzerfreundlichen Konfigurationstools. |
+| **Horizon OC Monitor** | Detailliertes Überwachungstool: aktuelle Taktraten, Stromverbrauch, Auflösung, FPS. |
 | **FPSLocker** | Reguliert die Bildwiederholfrequenz (FPS) von Spielen. |
-| **ReverseNX-RT** | Alternative zu ReverseNX, schaltet in Echtzeit zwischen Handheld- und Docking-Modus. |
+| **ReverseNX-RT** | Alternative zu ReverseNX; schaltet in Echtzeit zwischen Handheld- und Docking-Modus. |
 | **SaltyNX** | Sysmodule zum Einfügen von benutzerdefiniertem Code. |
 
 ---
 
-## OC-Aktivierung
+## Installation & Vorbereitung
 
-Die **loader.kip** muss beim Start geladen werden; ohne sie kann die Konsole nicht über Nintendos Standardwerte hinaus betrieben werden.
+In der Regel ist die CFW nach Installation des **OmniNX OC Pack** bereits overclocking-ready. Wichtig:
 
-1. **RAM Patcher** im Ultrahand-Menü öffnen.
-2. **„RAM Patch inkl. OC Kip Patch! – 4 GB“** ausführen. (Bei 8‑GB-Umbau den passenden Punkt wählen.)
-3. Konsole/CFW **neustarten** – die Kip-Datei wird danach automatisch geladen.
+- Unter `sd:/atmosphere/kips/` muss die Datei **`hoc.kip`** liegen.
+- In der **`hekate.ipl`** muss eine entsprechende Referenzierung vorhanden sein.
 
-![Ultrahand - RAM Patcher](/images/switch/omninx/overclocking/010_oc-aktivierung_rampatcher.jpg)
+>>> Safety Settings prüfen
+Öffne **Horizon OC Gaea** (nachfolgend: **HOC**) und stelle unter **Safety Settings** sicher, dass **Uncapped Clocks**, **Thermal Throttle** und **Handheld TDP** auf **ON** stehen.
 
-**Prüfen mit sys-clk:** Unter **Temporary Overrides** die maximalen Werte für CPU/GPU/RAM prüfen und mit der Tabelle vergleichen.
+>>> CPU High UV setzen
+Unter **CPU Settings** muss **CPU High UV** mindestens auf **1** stehen (Voraussetzung für uncapped OC).
+
+>>> Referenzwerte vergleichen
+Unter **Temporary Overrides** die maximalen Werte für CPU/GPU/RAM prüfen und mit den Tabellen unten vergleichen.
+
+!!!warning Neustart nach HOC-Änderungen
+Wurden Einstellungen in **Horizon OC Gaea** geändert, ist ein **Neustart der Konsole** zwingend nötig. Ohne Neustart werden die Werte nicht übernommen.
+!!!
 
 ### Referenzwerte (Dock)
 
-| <p> | CPU | GPU | RAM |
+| | CPU | GPU | RAM |
 |--|-----|-----|-----|
 | **Nintendo (Standard)** | 1020 / 1785 MHz Boost | 768 / 921 MHz Boost | 1600 MHz |
 | **nVidia (max.)** | bis 2000 MHz | bis 1000 MHz | bis 1866 MHz |
@@ -69,90 +76,134 @@ Die **loader.kip** muss beim Start geladen werden; ohne sie kann die Konsole nic
 
 ### Referenzwerte (Handheld)
 
-| <p> | CPU | GPU | RAM |
+| | CPU | GPU | RAM |
 |--|-----|-----|-----|
 | **Nintendo (Standard)** | 1020 MHz | 307 / 460 MHz Boost | 1333 MHz |
 | **nVidia (max.)** | bis 2000 MHz | bis 1000 MHz | bis 1866 MHz |
 | **CFW OC (safe)** | 1530 MHz | 460 MHz | 1600 MHz |
 | **CFW OC (uncapped)** | 2397 MHz | 1267 MHz | 1996 MHz |
 
-In der Regel sollten Werte wie **2397 / 1267 / 1996** MHz oder ähnlich sichtbar sein – mindestens höher als der Nintendo-Standard. Der RAM-Takt entspricht dem in **OC Switchcraft EOS** gesetzten Wert.
+In der Regel sollten Werte wie **2397 / 1267 / 1996** MHz oder ähnlich sichtbar sein, mindestens höher als der Nintendo-Standard. Der RAM-Takt entspricht dem in den HOC-Settings unter **Ram Max Clock** gesetzten Wert.
 
 ---
 
-## OC Switchcraft EOS
+## Horizon OC Gaea – Begrifflichkeiten
 
-Vor dem Übertakten von CPU/GPU/RAM die Grundeinstellung vornehmen. Nur die relevanten Werte anpassen, der Rest sollte **Default** bleiben.
+| Menüpunkt | Bedeutung |
+|-----------|-----------|
+| **Edit App Profile** | Homebrew-/Spiel-spezifische Übertaktungswerte |
+| **Edit Global Profile** | Globale Werte für alles (werden durch **App Profile** überschrieben, falls gesetzt) |
+| **Temporary Overrides** | Temporäre Werte; werden durch Neustart zurückgesetzt |
+| **Settings** | Voreinstellungen (Taktfrequenz, Timing, Spannung usw.) |
+| **About** | Entwicklerinfos und Danksagungen |
 
-**RAM**
-- **Timings:** Definieren die Reaktionszeit des Arbeitsspeichers
-- **Max Clock:** Maximale Taktrate für den Arbeitsspeicher
-- **Vddq:** Versorgung der Datenausgangspuffer, Signalintegrität
-- **Vdd2:** Spannungsversorgung des Speichercontrollers in der CPU; regelt die Stabilität der CPU-RAM-Kommunikation
+### Safety Settings
 
-**CPU**
-- **UV Level:** Vordefinierte Undervolt-Level; je höher der Wert, desto stärker das Undervolting
-- **High Freq UV Level:** Undervolt bei maximaler Taktfrequenz; niedrige Werte meist stabiler, **„1“** ist das Minimum für uncapped OC
-- **Low Freq VMin / High Freq VMin:** Mindestspannung bei niedrigster bzw. höchster Taktfrequenz
-- **Volt Limit:** Maximale Spannungsaufnahme
-- **Boost Clock:** Taktfrequenz, die automatisch genutzt wird (z. B. um Ladezeiten zu beschleunigen)
-- **Max Clock:** Maximal erlaubte Taktfrequenz
+| Einstellung | Beschreibung |
+|-------------|--------------|
+| **Uncapped Clocks** | Entfernt die Taktbegrenzung. Vorsicht, besonders im Handheld. (Standard: **ON**) |
+| **Thermal Throttle** | Senkt Taktraten ab einer Temperaturschwelle. (Standard: **ON**) |
+| **Handheld TDP** | Senkt Taktraten, wenn der Akku zu viel Leistung zieht. (Standard: **ON**; 9600 mW bei V1/V2/OLED, 6400 mW bei Lite) |
+| **TDP Threshold** | Schwellenwert für Handheld TDP |
+| **Thermal Thrott Limit** | Temperaturschwelle für Thermal Throttle |
 
-**GPU**
-- **UV Level:** Tabellenbasierte Spannungsregulierung
-- **Auto Vmin Offset:** Dynamische Offset-Skalierung von Spannung und Taktfrequenz
-- **Vmin / Vmax:** Regelung der Minimal- bzw. Maximalspannung
-- **Volt Offset:** Undervolting-Offset zur Spannungsreduzierung
+### RAM Settings
 
-Nun können die ersten Werte gesetzt werden (orientiere dich an den Einstellungen im Menü):
+| Einstellung | Beschreibung |
+|-------------|--------------|
+| **SOC DVB Shift** | Erhöht die SoC-Spannung zur RAM-Stabilisierung, besonders ab 2400 MHz+. |
+| **HP Mode** | Verbessert Latenz durch Deaktivierung des Energiesparmodus. (Standard: **OFF**) |
+| **RAM VDD2 Voltage** | Spannung des Speichercontrollers; Stabilität der CPU-RAM-Kommunikation |
+| **RAM VDDQ Voltage** | Versorgung der Datenausgangspuffer, Signalintegrität |
+| **Step Mode** | Schrittweite der Frequenzliste (z. B. 66 MHz: 1600 → 1666 → 1733) |
+| **Ram Max Clock** | Maximale RAM-Taktrate |
+| **RAM Latency Editor** | Konfiguration der Lese- und Schreiblatenz (tRWL) |
+| **RAM Timings Reductions** | Reaktionszeit des Arbeitsspeichers |
 
-![OC Switchcraft EOS – Einstellungen](/images/switch/omninx/overclocking/021_oc-switchraft-eos_ram.jpg)
+### CPU Settings
 
-:::content-center
-||| CPU-Einstellungen
-<a href="/images/switch/omninx/overclocking/022_oc-switchraft-eos_cpu.jpg" target="_blank" rel="noopener">![OC Switchcraft EOS – CPU](/images/switch/omninx/overclocking/022_oc-switchraft-eos_cpu.jpg)</a>
-||| GPU-Einstellungen
-<a href="/images/switch/omninx/overclocking/023_oc-switchraft-eos_gpu.jpg" target="_blank" rel="noopener">![OC Switchcraft EOS – GPU](/images/switch/omninx/overclocking/023_oc-switchraft-eos_gpu.jpg)</a>
-|||
-:::
+| Einstellung | Beschreibung |
+|-------------|--------------|
+| **CPU Low UV** | Vordefinierte Undervolt-Level; höherer Wert = stärkeres Undervolting |
+| **CPU High UV** | Undervolt bei Maximal-Takt; niedrige Werte stabiler, **1** = Minimum für uncapped OC |
+| **CPU UV Tbreak** | Frequenz, an der niedrige und hohe UV-Modi wechseln |
+| **CPU Low VMIN** | Mindestspannung bei niedrigster Taktfrequenz |
+| **CPU High VMIN** | Mindestspannung bei höchster Taktfrequenz |
+| **CPU Max Voltage** | Maximale Spannungsaufnahme |
+| **CPU Max Clock** | Maximal erlaubte Taktfrequenz |
+| **CPU Boost Clock** | Kurzzeit-Boost (z. B. für Ladezeiten) |
+| **Overwrite Boost Mode** | Eigene Boost-Frequenz aktivieren |
 
-!!!warning Timings
-Die **Timings** müssen zum verbauten **RAM-Modul** passen. Dafür im Menü das passende **Preset/Template** der Entwickler laden – alle verfügbaren RAM-Module sind dort vordefiniert.
-!!!
+### GPU Settings
 
-Nach dem Setzen aller Werte die Konsole **einmal neustarten**, damit die Einstellungen aktiv werden.
-
-!!!danger Boot-Probleme
-Startet die Konsole nicht mehr in die CFW: **loader.kip** unter `sd:/atmosphere/kips` entfernen und durch die originale Kip aus `sd:/switch/.packages/RamPatcher/...` ersetzen.
-!!!
+| Einstellung | Beschreibung |
+|-------------|--------------|
+| **GPU Undervolt Table** | Gewählte UV-Tabelle (empfohlen: **High UV Table**) |
+| **GPU VMIN** | Minimale Spannungsaufnahme |
+| **GPU Max Voltage** | Maximale Spannungsaufnahme |
+| **GPU Voltage Offset** | Spannungsversatz für VMIN und Max Voltage |
+| **GPU Scheduling Override** | Auslastungsregelung der GPU (empfohlen: **OFF**) |
+| **GPU DVFS Mode** | Passt VMIN an den RAM-Takt an (empfohlen: **PCV Hijack**) |
+| **GPU DVFS Offset** | Spannungsversatz für VMIN im DVFS-Modus |
+| **GPU Voltage Table** | Detailmenü der UV-Tabelle: GPU-Taktfrequenzen und Spannungsparameter |
 
 ---
 
-## sys-clk Overlay
+## Arbeitsspeicher (RAM)
 
-1. Im Ultrahand-Menü unter **Overlays** **sys-clk** auswählen.
-2. Unter **Settings** aktivieren: **Uncapped Clocks**, **Boost Mode Override**, **Auto CPU Boost** – für vollen Zugriff auf die Einstellungen und maximale Taktraten.
-3. Unter **Temporary Overrides** die Frequenzen anpassen. Zum Einstieg die **Referenzwerte** aus der Tabelle nutzen (z. B. nVidia-Max). Mutige können sich auch gleich an den Maximalwerten **2397 / 1267 / 1996** MHz versuchen und im Worst Case die Konsole neustarten.
+Nintendo verbaut unterschiedliche Speichermodule (Samsung, Toshiba, Hynix usw.). Vor dem RAM-OC musst du wissen, **welches Modul** in deiner Konsole steckt, da jedes Modul anders übertaktbar ist.
 
-![sys-clk – Temporary Overrides](/images/switch/omninx/overclocking/031_sysclk_main.jpg)
+Die Info findest du in **Hekate** oder unter **Ultrahand → Systeminfo** (z. B. Vendor: Samsung, Modell: K4UBE3D4AA-MGCL).
 
-:::content-center
-||| sys-clk Settings
-<a href="/images/switch/omninx/overclocking/032_sysclk_config.jpg" target="_blank" rel="noopener">![sys-clk – Settings](/images/switch/omninx/overclocking/032_sysclk_config.jpg)</a>
-||| Temporary Overrides
-<a href="/images/switch/omninx/overclocking/033_sysclk_temporary.jpg" target="_blank" rel="noopener">![sys-clk – Temporary Overrides](/images/switch/omninx/overclocking/033_sysclk_temporary.jpg)</a>
-|||
-:::
+In der OC-Szene werden RAM-Module per **Tier Level** eingestuft: Je höher der Tier, desto übertaktfreudiger das Modul.
 
-4. Im **Status Monitor** prüfen, ob Taktraten und **Stromverbrauch (W)** stimmen – im Handheld **max. 8,6 W** (V2/OLED) bzw. **6,5 W** (V1/Lite) für den Akku einhalten.
+| Tier Level | RAM ID |
+|------------|--------|
+| **GOD-tier** | WT:B, NEI/NEE |
+| **S-tier** | AA-MGCL/AA-MGCR |
+| **A-tier** | AM-MGCJ, WT:E |
+| **B-tier** | WT:F |
+| **C-tier** | AB-MGCL |
+| **D-tier** | NME |
 
-![Status Monitor – Taktraten und Verbrauch](/images/switch/omninx/overclocking/034_sysclk_statusmonitor.jpg)
-
-!!!info Hänger
-Reagiert die Konsole nicht mehr: **Power-Taste lange** drücken zum Neustart.
+!!!warning RAM-Info nach Umbau
+Es wird immer die ID des **ab Werk verbauten** RAMs angezeigt. Nach einem **8-GB-Upgrade** oder RAM-Tausch bei einer Reparatur ist die Anzeige oft **falsch**. Dann die Person fragen, die den RAM verbaut hat.
 !!!
 
-Da es nur wenige Benchmarks (z. B. Ultracam, Furmark-NX) gibt und diese nicht ausreichend genau testen, **10–15 Minuten** mit einem anspruchsvollen Spiel testen. Geeignet sind z. B.:
+### Richtwerte vom HOC-Entwickler
+
+| Tier | RAM ID | Ram Clock | VDD2 | VDDQ | Common Timings (T1–T8) | Super Tight (ST) Timings (T1–T8) |
+|------|--------|-----------|------|------|------------------------|----------------------------------|
+| GOD | WT:B | 3066–3200 | 1175 mV | 600 mV | (4-4-5) 4-2-6-5-6 | (6-6-7) 5-2-6-5-6 |
+| GOD | NEI/NEE/x267 | 3100–3300 | 1175 mV | 640 mV | (3-3-2) 1-5-5-4-6 | (4-4-4) 2-7-6-5-6 |
+| S | AA-MGCL/MGCR | 2766–3100 | 1175 mV | 640 mV | (4-4-5) 4-5-5-6-6 | (4-4-8) 5-5-6-7-6 |
+| A | WT:E | 2500–3033 | 1175 mV | 600 mV | (2-2-2) 1-4-4-4-6 | (3-5-3) 2-5-4-S-6 |
+| B | AM-MGCJ | 2633–2933 | 1175 mV | 640 mV | (3-2-4) 1-4-4-4-6 | (4-3-8) 1-5-4-4-6 |
+| C | WT:F | 2633–2800 | 1175 mV | 600 mV | (4-4-2) 4-4-6-3-6 | (5-5-4) 4-5-6-5-6 |
+| D | AB-MGCL | 2500–2766 | 1175 mV | 640 mV | (4-4-4) 3-4-5-6-6 | (4-4-8) 4-5-6-8-6 |
+| E | NME | 2300–2566 | 1175 mV | 640 mV | (2-2-3) 0-1-2-2-6 | (5-3-4) 1-8-3-3-6 |
+
+!!!info Reihenfolge beim RAM-Tuning
+Ermittle zuerst die **maximale RAM-Frequenz**, bevor du Timings anpasst. **t7** und **t6** sind stark frequenzabhängig und müssen bei hohen Takten oft gelockert werden.
+
+**2533 MHz** sind bekannt dafür, durch Timing-Änderungen Probleme zu verursachen. Teste vorsichtig. **JEDEC-Frequenzen** (RAM Settings → **Step Mode**) können je nach Chip mehr Leistung, engere Timings oder bessere Stabilität bringen, variieren aber stark.
+!!!
+
+### Moderates RAM-Overclocking
+
+>>> Erster Versuch: 2200 MHz
+Setze **Ram Max Clock** auf **2200 MHz**. Dieser Wert funktioniert erfahrungsgemäß auf den meisten Konsolen. **Common Timings** sowie **VDD2** und **VDDQ** aus der Tabelle übernehmen.
+
+>>> Höherer Start mit DVB-Shift
+Startest du über 2200 MHz, beginne mit **DVB-Shift 10** und reduziere auf **2–6**, sobald die maximale RAM-Geschwindigkeit steht. Höherer DVB-Shift erhöht den Stromverbrauch kaum, aber leicht die Wärmeentwicklung.
+
+>>> Neustart & Temporary Overrides
+Nach dem Setzen der Werte: **Konsole neustarten**. Danach in **Temporary Overrides** den gewünschten RAM-Takt aktivieren.
+
+>>> Absturz oder Freeze
+Konsole einfrieren oder mit Fehler beenden: Einstellungen anpassen (**Ram Max Clock** zu hoch oder Timings zu straff). Bei eingefrorener Konsole **Power** gedrückt halten bis sie ausgeht, dann wieder einschalten. Ein kurzes **Knacken** aus den Lautsprechern ist normal.
+
+Solange bis **Startbildschirm und Spiele** stabil laufen, Werte schrittweise anpassen. Wenige Benchmarks (z. B. Ultracam, Furmark-NX) reichen nicht: Teste mit anspruchsvollen Spielen, z. B.:
 
 - Zelda – Tears of the Kingdom
 - Batman Arkham Knight
@@ -161,23 +212,92 @@ Da es nur wenige Benchmarks (z. B. Ultracam, Furmark-NX) gibt und diese nicht 
 - The Witcher 3: Wild Hunt
 - Hogwarts Legacy
 
-Keine Grafikfehler oder Abstürze nach einigen Minuten → **Einstellung ist stabil.**
+>>> Feintuning nach stabilem Takt
+1. **DVB-Shift** von 10 schrittweise auf **2–6** reduzieren (je niedriger, desto besser).
+2. Passende **Super Tight (ST)** Timings testen.
+3. Schlägt ST fehl: DVB-Shift wieder erhöhen und/oder Timings lockern in dieser Reihenfolge: **t8 → t1 → t2 → t3 → t6 → t7 → t4 → t5**
+
+!!!tip Prioritäten beim RAM
+- Bei Problemen zuerst **t7** und **t6** lockern (stark frequenzabhängig).
+- RAM trägt am meisten zur Gesamtleistung bei: **maximale Frequenz zuerst**.
+- Selten scheitern Module selbst bei Common Timings; dann auch diese lockern.
+- **Höherer Clock ist oft relevanter als extrem niedrige Timings**, wenn z. B. 2800 MHz nur mit Common Timings stabil laufen.
+!!!
+
+### HP Mode
+
+**HP Mode** verbessert die Latenz und damit **1 %-Low-Werte** sowie weniger Ruckler. Manche RAM-Module vertragen ihn nicht.
+
+1. Maximalen Takt und Timings bei **deaktiviertem** HP Mode finden.
+2. Anschließend **HP Mode aktivieren** und erneut testen.
+3. Stabil → aktiv lassen, sonst deaktiviert lassen.
 
 ---
 
-## Optimierung / Feintuning
+## CPU & GPU
 
-Jede CPU, GPU und jeder RAM ist unterschiedlich. Nach erfolgreichem Maximum bei CPU/GPU kann der **Arbeitsspeicher (RAM)** feinjustiert werden.
+CPU-Takt spielt unter Atmosphere bei den meisten Apps und Spielen eine **untergeordnete** Rolle; Fokus liegt auf **RAM-Durchsatz** und **GPU**. Extremes OC lohnt selten, **Stabilität** hat Priorität.
 
-Viele getestete Konsolen laufen stabil bis **2200 MHz RAM** und teils darüber. Für höhere oder stabilere Taktraten: **Vddq** auf 640 mV, **Vdd2** auf 1175 mV setzen – dabei die **max. Leistungsaufnahme** (siehe Disclaimer) beachten.
+**Undervolting (UV)** ist nötig für Stabilität und begrenzten Strombedarf. Im Handheld weiterhin **max. 8,6 W** (V2/OLED) bzw. **6,5 W** (V1/Lite) einhalten. Gelegentliche Spitzen sind unkritisch, dauerhaft höhere Werte vermeiden.
 
-**Faustregel:** Je höher der Takt, desto mehr Spannung/Strom wird benötigt.
+!!!warning Switch V1
+Overclocking auf der **ältesten Generation (V1)** ist möglich, sollte aber mit **extremer Vorsicht** erfolgen. Wir raten davon ab; diese Anleitung ist primär für **V2, Lite und OLED** gedacht.
+!!!
+
+Ein **Speedo**-Wert (Ultrahand → **+** → **System**) über **1600** bei Mariko-Chips (V2, Lite, OLED) ist ein gutes Zeichen für erfolgreiches OC.
+
+### CPU – empfohlene Startwerte
+
+| Einstellung | Wert |
+|-------------|------|
+| CPU Low VMIN | 590 mV |
+| CPU High VMIN | 720 mV |
+| CPU Max Voltage | 1120 mV (Standard) |
+| CPU Max Clock | 2193 MHz |
+| CPU Boost Clock | 2397 MHz |
+
+**Overwrite Boost Mode** auf **On**, sonst greift der Boost-Wert nicht.
+
+Nach stabilem Neustart **CPU Low UV** und **CPU High UV** setzen: mit **4** beginnen und so hoch wie möglich steigern. Manche Konsolen starten schon bei **CPU Low UV = 1** nicht mehr; **CPU High VMIN** ist oft wichtiger.
+
+**CPU UV Tbreak** meist auf Standard **1683 MHz Tbreak** lassen. Hilft **CPU High UV = 1** nicht, **1581 MHz Tbreak** testen.
+
+### GPU – empfohlene Startwerte
+
+Bei der GPU auf **Artefakte** neben Abstürzen achten; sie treten oft erst nach einigen Minuten im Spiel auf.
+
+Frequenzen **über 1305 MHz** GPU-Takt nur mit **extremer Vorsicht**; hier droht am ehesten Hardwareschaden. Relevant ist vor allem die **GPU Voltage Table** (Frequenzen ab 1267 MHz aktivieren).
+
+| Einstellung | Wert |
+|-------------|------|
+| GPU VMIN | 550 mV |
+| GPU Max Voltage | 800 mV |
+| GPU Voltage Offset | -10 |
+| GPU Scheduling Override | Do not override |
+| GPU DVFS Mode | PCV Hijack |
+| GPU DVFS Offset | -10 mV |
+| GPU Voltage Table | 76,8 MHz bis 1267,2 MHz → **AUTO** |
+
+---
+
+## Monitoring
+
+**Horizon OC Monitor** (erweiterte Version von Status Monitor) zeigt Frequenzen, Stromverbrauch, Auflösung, FPS und Temperaturen.
+
+Bei den Layouts **Mini** und **Micro** sind nicht alle Elemente voraktiviert. Einstellungen erreichst du mit **Y**:
+
+- **Elements**: Was angezeigt wird
+- **Toggles**: Detailwerte pro Element
+
+!!!info Echte Temperaturen
+Aktiviere den Toggle **Real Temperatures**, damit CPU, GPU und RAM echte Werte zeigen. **TMP** ist nur ein berechneter Wert und meist niedriger, daher eher deaktivieren.
+!!!
 
 ---
 
 ## Maximale Bildqualität
 
-Wenn die nötige Leistung aus der Konsole geholt ist, kannst du mit dem **ReverseNX-RT**-Overlay mehr Grafikqualität und Auflösung aus den Spielen holen (ohne Mods). Stellst du ein Spiel auf **„Fake Docked“** (entspricht dem normalen Dockmodus), bekommst du z. B. mehr Auflösung, Tiefenschärfe und Details in der Ferne auch im Handheldbetrieb angezeigt. Die Auflösung wird dann aber von max. 1080p auf die tatsächliche Auflösung des Switch-Bildschirms runterskaliert. Dieser Prozess bringt dir aber am Ende ein schärferes Bild.
+Wenn die nötige Leistung aus der Konsole geholt ist, kannst du mit dem **ReverseNX-RT**-Overlay mehr Grafikqualität und Auflösung aus den Spielen holen (ohne Mods). Stellst du ein Spiel auf **„Fake Docked“** (entspricht dem normalen Dockmodus), bekommst du z. B. mehr Auflösung, Tiefenschärfe und Details in der Ferne auch im Handheldbetrieb angezeigt. Die Auflösung wird dann von max. 1080p auf die tatsächliche Auflösung des Switch-Bildschirms runterskaliert. Dieser Prozess bringt dir aber am Ende ein schärferes Bild.
 
 :::content-center
 ||| Standard
@@ -188,7 +308,7 @@ Wenn die nötige Leistung aus der Konsole geholt ist, kannst du mit dem **Revers
 :::
 
 !!!warning Nicht global
-Die Einstellung ist **nicht** wie beim sys-clk-Overlay global – für **jedes Spiel** muss ReverseNX-RT einzeln gesetzt und gespeichert werden.
+Die Einstellung ist **nicht** global wie bei HOC-Profilen: Für **jedes Spiel** muss ReverseNX-RT einzeln gesetzt und gespeichert werden.
 !!!
 
 !!!danger Reihenfolge
@@ -197,14 +317,14 @@ Die Einstellung ist **nicht** wie beim sys-clk-Overlay global – für **jedes S
 
 ---
 
-## Bildwiederholrate / Frames per Second (FPS)
+## Bildwiederholrate / FPS
 
 Für viele wichtiger als reine Auflösung ist eine stabile, hohe **Bildwiederholungsrate (FPS)**. Dafür sorgt der **FPSLocker**.
 
 ![Ultrahand - FPSLocker](/images/switch/omninx/overclocking/051_fpslocker_main.jpg)
 
 !!!warning 30-FPS-Limit vieler Spiele
-Viele Spiele (z. B. **Zelda – Breath of the Wild**) unterstützen ab Werk **keine Werte über 30 FPS.** Wer höhere FPS ohne passenden Patch einstellt, erlebt dass Figuren und die Welt **deutlich schneller** laufen – das Spielgefühl stimmt dann nicht.
+Viele Spiele (z. B. **Zelda – Breath of the Wild**) unterstützen ab Werk **keine Werte über 30 FPS.** Wer höhere FPS ohne passenden Patch einstellt, erlebt dass Figuren und die Welt **deutlich schneller** laufen.
 !!!
 
 Um **über 30 FPS** das richtige Spielgefühl zu bekommen, bietet der FPSLocker unter **„Advanced settings“** die nötigen Tools. Dort findest du in der Regel:
@@ -222,17 +342,25 @@ Um **über 30 FPS** das richtige Spielgefühl zu bekommen, bietet der FPSLocker 
 |||
 :::
 
-Einfach den **Konverter ausführen**, Spiel **neustarten** und anschließend kannst du die Bildrate schrittweise bis z. B. **60 FPS** erhöhen. Die englischen Beschreibungen im Menü erklären die Schritte im Detail.
+Konverter ausführen, Spiel **neustarten**, dann die Bildrate schrittweise bis z. B. **60 FPS** erhöhen.
 
-Denk aber bitte daran, dass du für höhere Frameraten auch entsprechend mehr Leistung brauchst und die Nintendo Switch gerne an ihre Grenzen gerät. Das bedeutet, während ein "The Legend of Zelda: Tears of the Kingdom" problemlos bei dir mit 60 FPS läuft, kann ein "Batman: Arkham Knight" weiterhin mit 35 FPS vor sich hindümpeln. Manche Spiele sind einfach zu hardwarehungrig und das gilt vor allem für Third-Party-Games.
+Für höhere Frameraten brauchst du mehr Leistung; die Switch stößt schnell an Grenzen. **Tears of the Kingdom** kann bei 60 FPS laufen, **Batman: Arkham Knight** vielleicht nur bei ~35 FPS, besonders bei Third-Party-Titeln.
 
 ---
 
-## Problembehebungen / Bugfixes
+## Problembehebung
 
 **Maximale Taktfrequenz zu niedrig**
 
-> Es kann wie immer vorkommen, dass bei der ganze Konfiguration manche Werte vergessen werden, die essentiell sind um maximalen Taktraten **"Uncapped Clocks"** einstellen zu können. Solltest du z. B. deinen GPU-Takt trotz aktiviertem "Uncapped Clocks" im Sys-Clk-Overlay nicht über 998/1075 MHz betreiben können, kann das zwei Ursachen haben:
->
-> 1. Dein System hat einen viel zu hohen Gesamtverbrauch und die internen Schutzmechanismen von OC Switchcraft EOS und sys-clk overlay drosseln dies durch Begrenzung des Maximaltakts. Dann musst du mit **Undervolting** der CPU und des RAMs entgegenwirken.
-> 2. Oder, und das ist viel wahrscheinlicher, du hast vergessen den Wert **"High Freq UV Level = 1"** zu setzen.
+Solltest du z. B. den GPU-Takt trotz **Uncapped Clocks** nicht über 998/1075 MHz betreiben können, sind zwei Ursachen wahrscheinlich:
+
+1. **Zu hoher Gesamtverbrauch**: Schutzmechanismen in HOC (Safety Settings) drosseln den Takt. Mit **Undervolting** von CPU und RAM entgegenwirken und Handheld-TDP beachten.
+2. **CPU High UV vergessen**: Unter **CPU Settings** muss **CPU High UV** mindestens auf **1** stehen. Danach **Neustart**.
+
+!!!danger Boot-Probleme
+Startet die Konsole nicht mehr in die CFW: Prüfe `sd:/atmosphere/kips/hoc.kip` und die Einträge in **hekate.ipl**. Im Notfall **hoc.kip** entfernen oder aus einem Backup wiederherstellen.
+!!!
+
+!!!info Hänger
+Reagiert die Konsole nicht mehr: **Power-Taste lange** drücken zum Neustart.
+!!!

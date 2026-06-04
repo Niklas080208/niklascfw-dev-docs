@@ -23,7 +23,7 @@ Der **OmniNX Installer** erkennt automatisch:
 Daraus wählt er:
 
 - **Update-Modus:** Nur CFW-relevante Ordner/Dateien werden ersetzt, **Spielstände und installierte Spiele bleiben erhalten**.
-- **Saubere Installation:** Kompletter Wipe von atmosphere, bootloader, config, switch; **DBI**, **Tinfoil** und **prod.keys** werden gesichert und danach wiederhergestellt.
+- **Saubere Installation:** Kompletter Wipe von atmosphere, bootloader, config, switch; **DBI** und **prod.keys** werden gesichert und danach wiederhergestellt.
 
 ---
 
@@ -41,7 +41,7 @@ Der Installer zeigt **Modus** (Update/Saubere Installation), **Pack-Variante** (
 Bei der **Switch Lite** funktioniert nur die **Power-Taste** zur Bestätigung.
 !!!
 >>> Installation abwarten
-Der Installer kopiert alle Dateien in die SD-Root, legt **config/omninx/manifest.ini** an und räumt den Pack-Ordner weg. Fortschritt auf dem Bildschirm verfolgen. Bei **sauberer Installation** werden DBI, Tinfoil und prod.keys vorher gesichert und danach wiederhergestellt.
+Der Installer kopiert alle Dateien in den SD-Root und räumt den Pack-Ordner weg. Fortschritt auf dem Bildschirm verfolgen. Bei **sauberer Installation** werden DBI und prod.keys vorher gesichert und danach wiederhergestellt.
 
 ![Installation](/images/switch/omninx/installation/payload-installation.jpeg)
 >>> Abschluss
