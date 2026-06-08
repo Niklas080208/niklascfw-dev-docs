@@ -1,6 +1,10 @@
 # Installation von OmniNX
 
-Nach dem [Download](download) und dem Kopieren des Packs auf die SD-Karte startest du hier den **OmniNX Installer** und führst die Installation durch.
+Nach dem [Download](../download) und dem Kopieren des Packs auf die SD-Karte startest du hier den **OmniNX Installer** und führst die Installation durch.
+
+!!!info Ungewöhnliche Fenster oder Unklarheiten?
+Taucht während der Installation eine **ungewohnte Meldung** oder ein **unerwartetes Fenster** auf, schau zuerst in die [Fehlerbehebung](troubleshooting) – dort sind die häufigsten Hinweise erklärt.
+!!!
 
 ---
 
@@ -35,6 +39,19 @@ Bei der **Switch Lite** funktioniert nur die **Power-Taste** zur Bestätigung.
 Der Installer kopiert alle Dateien in den SD-Root und räumt den Pack-Ordner weg. Fortschritt auf dem Bildschirm verfolgen. Bei **sauberer Installation** werden DBI und prod.keys vorher gesichert und danach wiederhergestellt.
 
 ![Installation](/images/switch/omninx/installation/payload-installation.jpeg)
+>>> RAM-Konfiguration wählen
+Es erscheint eine Auswahl für die **RAM-Konfiguration**. Wähle passend zu deiner Konsole:
+
+- **4 GB Konsole (Standard):** für alle normalen Switch-Konsolen.
+- **8 GB Konsole:** **nur**, wenn du tatsächlich einen **8-GB-RAM-Umbau** hast.
+
+Mit **D-Pad / Vol+/-** auswählen, mit **A** oder **Power** bestätigen.
+
+!!!danger Kein RAM-Umbau? Unbedingt 4 GB wählen
+Wählst du ohne 8-GB-Umbau die Option **8 GB**, bekommst du **Boot-Probleme**. Im Zweifel **4 GB Konsole (Standard)**.
+!!!
+
+![RAM-Konfiguration wählen](/images/switch/omninx/installation/payload-ram-auswahl.png)
 >>> Abschluss
 Wenn „Erfolgreich“ angezeigt wird, erneut **A** oder **Power** drücken. Der Installer startet automatisch **Hekate** (über `sd:/bootloader/update.bin`).
 
@@ -47,8 +64,8 @@ Nach dem Neustart in **Hekate** die **Uhrzeit** setzen.
 
 !!!success Nach der Installation
 - **Bereits emuMMC:** **Launch** → **CFW-EmuMMC** → CFW starten.
-- **Noch kein emuMMC:** Weiter mit **[emuMMC erstellen](emummc_erstellen)**.
-- **Nur einrichten:** Weiter mit **[Pack einrichten](pack_einrichten)**.
+- **Noch kein emuMMC:** Weiter mit **[emuMMC erstellen](../emummc_erstellen)**.
+- **Nur einrichten:** Weiter mit **[Pack einrichten](../pack_einrichten)**.
 !!!
 
 ==- Fehler? (Troubleshooting)
