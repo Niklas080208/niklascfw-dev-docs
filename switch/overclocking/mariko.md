@@ -1,7 +1,7 @@
-# Overclocking / Undervolting (nur für Fortgeschrittene)
+# Overclocking / Undervolting (V2,Lite,OLED)
 
 !!!danger Haftungsausschluss
-Falsches bzw. zu starkes Übertakten kann zu **irreparablen Schäden** an der Hardware führen. Wir übernehmen hierfür **keine Haftung**. Außerdem wird davon abgeraten, im **Handheldbetrieb** die Konsole über **8,6 W** (V2/OLED) bzw. **6,5 W** (V1/Lite) zu betreiben, da der Akku sonst beschädigt werden kann.
+Falsches bzw. zu starkes Übertakten kann zu **irreparablen Schäden** an der Hardware führen. Wir übernehmen hierfür **keine Haftung**. Außerdem wird davon abgeraten, im **Handheldbetrieb** die Konsole über **8,6 W** (V2/OLED) bzw. **6,5 W** (Lite) zu betreiben, da der Akku sonst beschädigt werden kann.
 !!!
 
 ---
@@ -12,7 +12,7 @@ Falsches bzw. zu starkes Übertakten kann zu **irreparablen Schäden** an der Ha
 - Folgende Tools mittels **Package Manager** in Ultrahand aktiviert:
   - **Overlays**
     - Horizon OC Monitor
-    - Horizon OC Gaea
+    - Horizon OC
     - FPSLocker (optional)
     - ReverseNX-RT (optional)
   - **Sysmodules**
@@ -28,7 +28,7 @@ Stelle Ultrahand auf **Englisch** um: Die Menüs sind übersichtlicher und die F
 
 | Tool | Beschreibung |
 |------|--------------|
-| **Horizon OC Gaea** | Übertaktungsprogramm; erweitertes CPU-, GPU- und RAM-Tuning mit benutzerfreundlichen Konfigurationstools. |
+| **Horizon OC** | Übertaktungsprogramm; erweitertes CPU-, GPU- und RAM-Tuning mit benutzerfreundlichen Konfigurationstools. |
 | **Horizon OC Monitor** | Detailliertes Überwachungstool: aktuelle Taktraten, Stromverbrauch, Auflösung, FPS. |
 | **FPSLocker** | Reguliert die Bildwiederholfrequenz (FPS) von Spielen. |
 | **ReverseNX-RT** | Alternative zu ReverseNX; schaltet in Echtzeit zwischen Handheld- und Docking-Modus. |
@@ -44,16 +44,19 @@ In der Regel ist die CFW nach Installation des **OmniNX OC Pack** bereits overcl
 - In der **`hekate.ipl`** muss eine entsprechende Referenzierung vorhanden sein.
 
 >>> Safety Settings prüfen
-Öffne **Horizon OC Gaea** (nachfolgend: **HOC**) und stelle unter **Safety Settings** sicher, dass **Uncapped Clocks**, **Thermal Throttle** und **Handheld TDP** auf **ON** stehen.
+Öffne **Horizon OC** (nachfolgend: **HOC**) und stelle unter **Safety Settings** sicher, dass **Uncapped Clocks** und **Thermal Throttle** auf **ON** stehen.
+![Platzhalter: HOC Safety Settings](/images/switch/allgemein/placeholder.png)
 
 >>> CPU High UV setzen
 Unter **CPU Settings** muss **CPU High UV** mindestens auf **1** stehen (Voraussetzung für uncapped OC).
+![Platzhalter: HOC CPU Settings](/images/switch/allgemein/placeholder.png)
 
 >>> Referenzwerte vergleichen
 Unter **Temporary Overrides** die maximalen Werte für CPU/GPU/RAM prüfen und mit den Tabellen unten vergleichen.
+![Platzhalter: HOC Temporary Overwrites](/images/switch/allgemein/placeholder.png)
 
 !!!warning Neustart nach HOC-Änderungen
-Wurden Einstellungen in **Horizon OC Gaea** geändert, ist ein **Neustart der Konsole** zwingend nötig. Ohne Neustart werden die Werte nicht übernommen.
+Wurden Einstellungen in **Horizon OC** geändert, ist ein **Neustart der Konsole** zwingend nötig. Ohne Neustart werden die Werte nicht übernommen.
 !!!
 
 ### Referenzwerte (Dock)
@@ -78,7 +81,7 @@ In der Regel sollten Werte wie **2397 / 1267 / 1996** MHz oder ähnlich sichtbar
 
 ---
 
-## Horizon OC Gaea – Begrifflichkeiten
+## Horizon OC – Begrifflichkeiten
 
 | Menüpunkt | Bedeutung |
 |-----------|-----------|
@@ -94,7 +97,7 @@ In der Regel sollten Werte wie **2397 / 1267 / 1996** MHz oder ähnlich sichtbar
 |-------------|--------------|
 | **Uncapped Clocks** | Entfernt die Taktbegrenzung. Vorsicht, besonders im Handheld. (Standard: **ON**) |
 | **Thermal Throttle** | Senkt Taktraten ab einer Temperaturschwelle. (Standard: **ON**) |
-| **Handheld TDP** | Senkt Taktraten, wenn der Akku zu viel Leistung zieht. (Standard: **ON**; 9600 mW bei V1/V2/OLED, 6400 mW bei Lite) |
+| **Handheld TDP** | Senkt Taktraten, wenn der Akku zu viel Leistung zieht. (Standard: **ON**; 9600 mW bei V2/OLED, 6400 mW bei Lite) |
 | **TDP Threshold** | Schwellenwert für Handheld TDP |
 | **Thermal Thrott Limit** | Temperaturschwelle für Thermal Throttle |
 
@@ -161,6 +164,8 @@ In der OC-Szene werden RAM-Module per **Tier Level** eingestuft: Je höher der T
 Es wird immer die ID des **ab Werk verbauten** RAMs angezeigt. Nach einem **8-GB-Upgrade** oder RAM-Tausch bei einer Reparatur ist die Anzeige oft **falsch**. Dann die Person fragen, die den RAM verbaut hat.
 !!!
 
+![Platzhalter: Hekate Console Info](/images/switch/allgemein/placeholder.png)
+
 ### Richtwerte vom HOC-Entwickler
 
 | Tier | RAM ID | Ram Clock | VDD2 | VDDQ | Common Timings (T1–T8) | Super Tight (ST) Timings (T1–T8) |
@@ -179,22 +184,27 @@ Ermittle zuerst die **maximale RAM-Frequenz**, bevor du Timings anpasst. **t7** 
 
 **2533 MHz** sind bekannt dafür, durch Timing-Änderungen Probleme zu verursachen. Teste vorsichtig. **JEDEC-Frequenzen** (RAM Settings → **Step Mode**) können je nach Chip mehr Leistung, engere Timings oder bessere Stabilität bringen, variieren aber stark.
 !!!
+>>>
 
-### Moderates RAM-Overclocking
+## Moderates RAM-Overclocking
 
 >>> Erster Versuch: 2200 MHz
 Setze **Ram Max Clock** auf **2200 MHz**. Dieser Wert funktioniert erfahrungsgemäß auf den meisten Konsolen. **Common Timings** sowie **VDD2** und **VDDQ** aus der Tabelle übernehmen.
+![Platzhalter: HOC RAM Clock](/images/switch/allgemein/placeholder.png)
 
 >>> Höherer Start mit DVB-Shift
 Startest du über 2200 MHz, beginne mit **DVB-Shift 10** und reduziere auf **2–6**, sobald die maximale RAM-Geschwindigkeit steht. Höherer DVB-Shift erhöht den Stromverbrauch kaum, aber leicht die Wärmeentwicklung.
+![Platzhalter: HOC Temporary Overwrites](/images/switch/allgemein/placeholder.png)
 
 >>> Neustart & Temporary Overrides
 Nach dem Setzen der Werte: **Konsole neustarten**. Danach in **Temporary Overrides** den gewünschten RAM-Takt aktivieren.
 
->>> Absturz oder Freeze
-Konsole einfrieren oder mit Fehler beenden: Einstellungen anpassen (**Ram Max Clock** zu hoch oder Timings zu straff). Bei eingefrorener Konsole **Power** gedrückt halten bis sie ausgeht, dann wieder einschalten. Ein kurzes **Knacken** aus den Lautsprechern ist normal.
+!!!warning Absturz oder Freeze
+Friert die Konsole ein oder beendet mit Fehler: **Ram Max Clock** zu hoch oder **Timings** zu straff – Werte anpassen und erneut testen. Bei eingefrorener Konsole **Power** gedrückt halten, bis sie ausgeht, dann wieder einschalten. Ein kurzes **Knacken** aus den Lautsprechern ist normal.
+!!!
 
-Solange bis **Startbildschirm und Spiele** stabil laufen, Werte schrittweise anpassen. Wenige Benchmarks (z. B. Ultracam, Furmark-NX) reichen nicht: Teste mit anspruchsvollen Spielen, z. B.:
+!!!info Stabilität testen
+Passe Werte schrittweise an, bis **Startbildschirm und Spiele** stabil laufen. Wenige Benchmarks (z. B. Ultracam, Furmark-NX) reichen nicht – teste mit anspruchsvollen Spielen, z. B.:
 
 - Zelda – Tears of the Kingdom
 - Batman Arkham Knight
@@ -202,6 +212,7 @@ Solange bis **Startbildschirm und Spiele** stabil laufen, Werte schrittweise anp
 - Metro 2033 / Last Light
 - The Witcher 3: Wild Hunt
 - Hogwarts Legacy
+!!!
 
 >>> Feintuning nach stabilem Takt
 1. **DVB-Shift** von 10 schrittweise auf **2–6** reduzieren (je niedriger, desto besser).
@@ -229,11 +240,7 @@ Solange bis **Startbildschirm und Spiele** stabil laufen, Werte schrittweise anp
 
 CPU-Takt spielt unter Atmosphere bei den meisten Apps und Spielen eine **untergeordnete** Rolle; Fokus liegt auf **RAM-Durchsatz** und **GPU**. Extremes OC lohnt selten, **Stabilität** hat Priorität.
 
-**Undervolting (UV)** ist nötig für Stabilität und begrenzten Strombedarf. Im Handheld weiterhin **max. 8,6 W** (V2/OLED) bzw. **6,5 W** (V1/Lite) einhalten. Gelegentliche Spitzen sind unkritisch, dauerhaft höhere Werte vermeiden.
-
-!!!warning Switch V1
-Overclocking auf der **ältesten Generation (V1)** ist möglich, sollte aber mit **extremer Vorsicht** erfolgen. Wir raten davon ab; diese Anleitung ist primär für **V2, Lite und OLED** gedacht.
-!!!
+**Undervolting (UV)** ist nötig für Stabilität und begrenzten Strombedarf. Im Handheld weiterhin **max. 8,6 W** (V2/OLED) bzw. **6,5 W** (Lite) einhalten. Gelegentliche Spitzen sind unkritisch, dauerhaft höhere Werte vermeiden.
 
 Ein **Speedo**-Wert (Ultrahand → **+** → **System**) über **1600** bei Mariko-Chips (V2, Lite, OLED) ist ein gutes Zeichen für erfolgreiches OC.
 
@@ -246,6 +253,8 @@ Ein **Speedo**-Wert (Ultrahand → **+** → **System**) über **1600** bei Mari
 | CPU Max Voltage | 1120 mV (Standard) |
 | CPU Max Clock | 2193 MHz |
 | CPU Boost Clock | 2397 MHz |
+
+![Platzhalter: HOC CPU Settings – Startwerte](/images/switch/allgemein/placeholder.png)
 
 **Overwrite Boost Mode** auf **On**, sonst greift der Boost-Wert nicht.
 
@@ -268,6 +277,8 @@ Frequenzen **über 1305 MHz** GPU-Takt nur mit **extremer Vorsicht**; hier droht
 | GPU DVFS Mode | PCV Hijack |
 | GPU DVFS Offset | -10 mV |
 | GPU Voltage Table | 76,8 MHz bis 1267,2 MHz → **AUTO** |
+
+![Platzhalter: HOC GPU Settings – Startwerte](/images/switch/allgemein/placeholder.png)
 
 ---
 

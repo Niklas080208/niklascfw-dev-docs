@@ -116,5 +116,9 @@
 
 - [OmniNX-Pack aktualisieren](https://dev-docs.niklascfw.de/switch/updates/omninx-update.md): Hier geht es um das Aktualisieren des OmniNX-Packs (z. B. Standard/Light/OC) in der CFW/emuMMC – per UltraHand, OmniNX Downloader und OmniNX Installer.
 - [Firmware updaten](https://dev-docs.niklascfw.de/switch/updates/firmware-update.md): Hier geht es um das Aktualisieren der Switch-Firmware (Horizon OS) in der CFW/emuMMC mit Daybreak.
-- [Overclocking / Undervolting (nur für Fortgeschrittene)](https://dev-docs.niklascfw.de/switch/overclocking.md): Falsches bzw. zu starkes Übertakten kann zu irreparablen Schäden an der Hardware führen. Wir übernehmen hierfür keine Haftung. Außerdem wird davon abgeraten, im Handheldbetrieb die Konsole über 8,6 W (V2/OLED) bzw.
+
+### Overclocking (OC)
+
+- [Overclocking / Undervolting (V1)](https://dev-docs.niklascfw.de/switch/overclocking/erista.md): Jedes Overclocking geht über die ursprüngliche Auslegung der Hardware hinaus. Das Risiko hängt davon ab, wie weit du taktest und ob du innerhalb der Chip-Grenzen bleibst.
+- [Overclocking / Undervolting (V2,Lite,OLED)](https://dev-docs.niklascfw.de/switch/overclocking/mariko.md): Falsches bzw. zu starkes Übertakten kann zu irreparablen Schäden an der Hardware führen. Wir übernehmen hierfür keine Haftung. Außerdem wird davon abgeraten, im Handheldbetrieb die Konsole über 8,6 W (V2/OLED) bzw.
 - [Vom NiklasCFW Pack zu OmniNX](https://dev-docs.niklascfw.de/switch/omni-migrate.md): Das NiklasCFW Pack ist eingestellt und erhält keinen Support mehr. OmniNX ist der Nachfolger. Diese Anleitung zeigt, wie du auf der Konsole per Ultrahand und NiklasCFW Downloader wechselst, ohne einen PC.
