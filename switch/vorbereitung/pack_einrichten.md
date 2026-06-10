@@ -15,6 +15,10 @@ Nach dem ersten Start der CFW (OmniNX) solltest du noch ein paar Dinge einrichte
 Die folgenden Schritte gelten für **OmniNX** (Sphaira, DBI, Ultrahand usw.).
 !!!
 
+!!!warning Erster Start mit dem OC-Pack
+Beim **ersten Start** nach Installation oder Update des **OmniNX OC-Packs** braucht **UltraHand** einmalig **20–30 Sekunden**, bis es startet. In dieser Zeit werden die **Patches für FPSLocker** entpackt. Das ist normal – einfach abwarten, nicht neu starten.
+!!!
+
 ---
 
 ## Forwarder erstellen
